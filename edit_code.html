@@ -15,15 +15,15 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav-logo">
+    <header>
+        <div class="header-logo">
             <img src="./images/logo.png" alt="" aria-hidden="true">
         </div>
-        <div class="nav-search">
+        <div class="header-search">
             <input type="search" id="site-search" name="search" aria-label="Search through site content"
                 placeholder="Search">
         </div>
-        <ul class="nav-profile">
+        <ul class="header-profile">
             <div>
                 <img src="./images/profile.png" alt="Harry">
             </div>
@@ -31,53 +31,55 @@
                 <p>Harry</p>
             </div>
         </ul>
-    </nav>
+    </header>
 
-    <section class="menu">
-        <h2>Menu</h2>
-        <div class="menu--code-editor">
-            <img img src="./images/code.png" alt="" aria-hidden="true">
-            <span>Code Editor</span>
-        </div>
-        <div class="menu--community">
-            <img img src="./images/community.png" alt="" aria-hidden="true">
-            <span>Community</span>
-        </div>
-    </section>
-
-    <section>
-        <div class="code-editor">
-            <div class="code-editor--content">
-                <div class="mac-buttons">
-                    <div class="mac-buttons--red"></div>
-                    <div class="mac-buttons--yellow"></div>
-                    <div class="mac-buttons--green"></div>
-                </div>
-                <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-                    const unfold = (f, seed) => {
-                    const go = (f, seed, acc) => {
-                    const res = f(seed)
-                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                    }
-                    return go(f, seed, [])
-                    }</p>
+    <main>
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="menu--code-editor">
+                <img img src="./images/code.png" alt="" aria-hidden="true">
+                <span>Code Editor</span>
             </div>
-        </div>
-        <div class="button">
-            <button>Highlight View</button>
-        </div>
-    </section>
+            <div class="menu--community">
+                <img img src="./images/community.png" alt="" aria-hidden="true">
+                <span>Community</span>
+            </div>
+        </section>
 
-    <sidebar>
-        <div class="your-project">
-        </div>
-        <div class="personalization">
-        </div>
-    </sidebar>
+        <section class="code-editor">
+            <div class="code-editor--content">
+                <div class="code-editor--text">
+                    <div class="mac-buttons">
+                        <div class="mac-buttons--red"></div>
+                        <div class="mac-buttons--yellow"></div>
+                        <div class="mac-buttons--green"></div>
+                    </div>
+                    <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                        const unfold = (f, seed) => {
+                        const go = (f, seed, acc) => {
+                        const res = f(seed)
+                        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                        }
+                        return go(f, seed, [])
+                        }
+                    </p>
+                </div>
+            </div>
+            <div class="button">
+                <button>Highlight View</button>
+            </div>
+        </section>
+
+        <sidebar>
+            <div class="your-project">
+            </div>
+            <div class="personalization">
+            </div>
+        </sidebar>
+    </main>
 </body>
 
 

@@ -6,30 +6,38 @@ html, * {
 
 
 /* Nav Section*/
-nav {
+header {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     min-height: 100vh;
     padding: 2rem;
+    max-width: 86.25rem;
+    width: 100%;
 }
 
-.nav-logo img {
+.header-logo img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     margin-top: 6%;
 }
 
 /*Search Area*/
 
-.nav-search input {
+.header-search input {
     background: rgba(255, 255, 255, 0.16);
     border: none;
     border-radius: 0.5rem;
-    position: static;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 47rem;
     height: 3.5rem;
-    left: 0rem;
-    top: 0rem;
 }
 
 ::placeholder {
@@ -44,27 +52,38 @@ textarea:focus, input:focus {
 }
 
 /* Profile Picture*/
-.nav-profile {
+.header-profile {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     text-align: right;
 }
 
-.nav-profile p {
+.header-profile p {
     margin: 0.2rem 0.6rem 0.6rem 0.6rem;
 }
 
 
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 100vh;
+    max-width: 86.25rem;
+    width: 100%;
+}
+
 /* Menu */
 
+
 .menu {
-    position: absolute;
-    max-width: 15rem;
+    /* position: absolute;
+    max-width: 10.313rem;
     width: 100%;
     height: 9.125rem;
     left: 2rem;
-    top: 8rem;
+    top: 8rem; */
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -82,116 +101,124 @@ textarea:focus, input:focus {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 5% 5% 2% 0 ;
+    padding: 5% 5% 2% 0;
 }
 
 .menu--code-editor span, .menu--community span {
-     padding: 5% 6% 6% 6%;
+     padding: 5% 6% 6% 5%;
+}
+
+.code-editor {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 47rem;
+    height: 3.5rem;
 }
 
 
-.code-editor {
+.code-editor--content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 32px;
+    padding: 2rem;
 
     position: absolute;
-    width: 752px;
-    height: 366px;
-    left: 344px;
-    top: 128px;
+    width: 47rem;
+    height: 22.875rem;
+    left: 21.5;
+    top: 8rem;
 
     background: #6BD1FF;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
-.code-editor--content{
+.code-editor--text {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
 
-position: static;
-width: 688px;
-height: 302px;
-left: 32px;
-top: 32px;
+    position: static;
+    width: 43rem;
+    height: 18.875rem;
+    left: 2rem;
+    top: 2rem;
 
 /* Neutral/$dark-gray */
 
-background: #141414;
+    background: #141414;
 /* $editor-shadow */
 
-box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
-border-radius: 8px;
+    box-shadow: 0rem 1rem 1.5rem rgba(0, 0, 0, 0.24);
+    border-radius: 0.5rem;
 
 /* Inside Auto Layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 10px 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0.625rem 0rem;
 }
 
 /* Mac Buttons */
 
 .mac-buttons {
-    position: static;
-    width: 52px;
-    height: 12px;
-    left: 16px;
-    top: 16px;
-
-    /* Inside Auto Layout */
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 24px 0px;
+    margin: 0.625rem 0rem;
 }
 
 .mac-buttons .mac-buttons--red {
     position: absolute;
-    width: 12px;
-    height: 12px;
-    left: 16px;
-    top: 16px;
+    width: 0.75rem;
+    height: 0.75rem;
+    left: 2.813rem;
+    top: 3.438rem;
     /* Mac/$mac_red */
     background: #FF5F56;
+    border-radius: 50%;
 }
 
 .mac-buttons .mac-buttons--yellow{
     position: absolute;
-    width: 12px;
-    height: 12px;
-    left: 36px;
-    top: 16px;
+    width: 0.75rem;
+    height: 0.75rem;
+    left: 4.125rem;
+    top: 3.438rem;
     /* Mac/$mac_yellow */
     background: #FFBD2E;
+    border-radius: 50%;
 }
 
 .mac-buttons .mac-buttons--green {
 
     position: absolute;
-    width: 12px;
-    height: 12px;
-    left: 56px;
-    top: 16px;
+    width: 0.75rem;
+    height: 0.75rem;
+    left: 5.375rem;
+    top: 3.438rem;
     /* Mac/$mac_green */
     background: #27C93F;
+    border-radius: 50%;
 }
 
 
+.button {
+}
 
-button {
-
-position: absolute;
-width: 752px;
-height: 56px;
-left: 344px;
-top: 526px;
-
-background: rgba(80, 129, 251, 0.08);
-border-radius: 8px;
-border: none;
+.button button {
+    padding: 2%;
+    width: 47rem;
+    height: 3.5rem;
+    background: rgba(80, 129, 251, 0.08);
+    border-radius: 0.5rem;
+    border: none;
 }
