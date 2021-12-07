@@ -35,15 +35,48 @@
 
     <section class="menu">
         <h2>Menu</h2>
-        <div class="code-editor">
+        <div class="menu--code-editor">
             <img img src="./images/code.png" alt="" aria-hidden="true">
             <span>Code Editor</span>
         </div>
-        <div class="community">
+        <div class="menu--community">
             <img img src="./images/community.png" alt="" aria-hidden="true">
             <span>Community</span>
         </div>
     </section>
+
+    <section>
+        <div class="code-editor">
+            <div class="code-editor--content">
+                <div class="mac-buttons">
+                    <div class="mac-buttons--red"></div>
+                    <div class="mac-buttons--yellow"></div>
+                    <div class="mac-buttons--green"></div>
+                </div>
+                <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                    const unfold = (f, seed) => {
+                    const go = (f, seed, acc) => {
+                    const res = f(seed)
+                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                    }
+                    return go(f, seed, [])
+                    }</p>
+            </div>
+        </div>
+        <div class="button">
+            <button>Highlight View</button>
+        </div>
+    </section>
+
+    <sidebar>
+        <div class="your-project">
+        </div>
+        <div class="personalization">
+        </div>
+    </sidebar>
 
 </body>
 

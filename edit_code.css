@@ -78,15 +78,120 @@ textarea:focus, input:focus {
     color: #FFFFFF;
 }
 
-.code-editor, .community {
+.menu--code-editor, .menu--community {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 5% 5% 2% 0 ;
 }
 
-.code-editor span, .community span {
+.menu--code-editor span, .menu--community span {
      padding: 5% 6% 6% 6%;
 }
 
 
+.code-editor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+
+    position: absolute;
+    width: 752px;
+    height: 366px;
+    left: 344px;
+    top: 128px;
+
+    background: #6BD1FF;
+    border-radius: 8px;
+}
+
+.code-editor--content{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+
+position: static;
+width: 688px;
+height: 302px;
+left: 32px;
+top: 32px;
+
+/* Neutral/$dark-gray */
+
+background: #141414;
+/* $editor-shadow */
+
+box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+border-radius: 8px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 0px;
+}
+
+/* Mac Buttons */
+
+.mac-buttons {
+    position: static;
+    width: 52px;
+    height: 12px;
+    left: 16px;
+    top: 16px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+.mac-buttons .mac-buttons--red {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 16px;
+    top: 16px;
+    /* Mac/$mac_red */
+    background: #FF5F56;
+}
+
+.mac-buttons .mac-buttons--yellow{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 36px;
+    top: 16px;
+    /* Mac/$mac_yellow */
+    background: #FFBD2E;
+}
+
+.mac-buttons .mac-buttons--green {
+
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 56px;
+    top: 16px;
+    /* Mac/$mac_green */
+    background: #27C93F;
+}
+
+
+
+button {
+
+position: absolute;
+width: 752px;
+height: 56px;
+left: 344px;
+top: 526px;
+
+background: rgba(80, 129, 251, 0.08);
+border-radius: 8px;
+border: none;
+}
