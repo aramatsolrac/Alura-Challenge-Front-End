@@ -1,8 +1,9 @@
-body {
-    background-color: #051D3B;
+html, * {
     font-family: 'Inter', sans-serif;
     color: white;
+    background-color: #051D3B;
 }
+
 
 /* Nav Section*/
 nav {
@@ -53,3 +54,39 @@ textarea:focus, input:focus {
 .nav-profile p {
     margin: 0.2rem 0.6rem 0.6rem 0.6rem;
 }
+
+
+/* Menu */
+
+.menu {
+    position: absolute;
+    max-width: 15rem;
+    width: 100%;
+    height: 9.125rem;
+    left: 2rem;
+    top: 8rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.menu h2 {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.code-editor, .community {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5% 5% 2% 0 ;
+}
+
+.code-editor span, .community span {
+     padding: 5% 6% 6% 6%;
+}
+
+
