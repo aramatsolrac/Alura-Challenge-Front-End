@@ -16,33 +16,31 @@
 
 <body>
     <header>
-        <div class="header-logo">
-            <img src="./images/logo.png" alt="" aria-hidden="true">
-        </div>
-        <div class="header-search">
+        <div class="header-box">
+            <h1><img src="./images/logo.png" alt="" aria-hidden="true"></h1>
             <input type="search" id="site-search" name="search" aria-label="Search through site content"
                 placeholder="Search">
+            <ul>
+                <li><img src="./images/profile.png" alt="Harry"></li>
+                <li>
+                    <p>Harry</p>
+                </li>
+            </ul>
         </div>
-        <ul class="header-profile">
-            <div>
-                <img src="./images/profile.png" alt="Harry">
-            </div>
-            <div>
-                <p>Harry</p>
-            </div>
-        </ul>
     </header>
 
     <main>
-        <section class="menu">
-            <h2>Menu</h2>
-            <div class="menu--code-editor">
-                <img img src="./images/code.png" alt="" aria-hidden="true">
-                <span>Code Editor</span>
-            </div>
-            <div class="menu--community">
-                <img img src="./images/community.png" alt="" aria-hidden="true">
-                <span>Community</span>
+        <section>
+            <div class="menu">
+                <h2>Menu</h2>
+                <div class="menu--code-editor">
+                    <img img src="./images/code.png" alt="" aria-hidden="true">
+                    <span>Code Editor</span>
+                </div>
+                <div class="menu--community">
+                    <img img src="./images/community.png" alt="" aria-hidden="true">
+                    <span>Community</span>
+                </div>
             </div>
         </section>
 
@@ -74,9 +72,25 @@
         </section>
 
         <sidebar>
+            <h2>Your Project</h2>
             <div class="your-project">
+                <form>
+                    <input type="text" id="pname" name="pname" placeholder="Yours project name">
+                    <input type="text" id="description" name="description" placeholder="Project Description">
+                </form>
             </div>
+
+            <h2>Personalization</h2>
             <div class="personalization">
+                <select name"langague" id="langague">
+                    <option value="javascript">JavaScript</option>
+                    <option value="css">CSS</option>
+                    <option value="html">HTML</option>
+                </select>
+                <form>
+                    <input type="color" id="color" name="color" value="#6BD1FF"></input>
+                    <input type="submit" value="Save Project"></input>
+                </form>
             </div>
         </sidebar>
     </main>

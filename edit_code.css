@@ -6,36 +6,22 @@ html, * {
 
 
 /* Nav Section*/
-header {
+
+
+.header-box, main {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    min-height: 100vh;
-    padding: 2rem;
-    max-width: 86.25rem;
-    width: 100%;
+    margin: 2rem;
 }
 
-.header-logo img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 6%;
-}
 
 /*Search Area*/
 
-.header-search input {
+.header-box input {
     background: rgba(255, 255, 255, 0.16);
     border: none;
     border-radius: 0.5rem;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 47rem;
     height: 3.5rem;
 }
@@ -51,43 +37,24 @@ textarea:focus, input:focus {
     padding: 1rem;
 }
 
-/* Profile Picture*/
-.header-profile {
+/* Profile */
+
+.header-box ul {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    text-align: right;
+    list-style-type: none;
 }
 
-.header-profile p {
-    margin: 0.2rem 0.6rem 0.6rem 0.6rem;
+.header-box ul li {
+    margin: 0.063rem 0.25rem;
 }
 
-
-main {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    min-height: 100vh;
-    max-width: 86.25rem;
-    width: 100%;
+.header-box ul li p {
+    padding: 0.125rem;
 }
 
 /* Menu */
-
-
-.menu {
-    /* position: absolute;
-    max-width: 10.313rem;
-    width: 100%;
-    height: 9.125rem;
-    left: 2rem;
-    top: 8rem; */
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-}
 
 .menu h2 {
     font-size: 0.75rem;
@@ -95,46 +62,26 @@ main {
     letter-spacing: 0.4em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin: 1rem 0;
 }
 
 .menu--code-editor, .menu--community {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 5% 5% 2% 0;
+    margin: 0.5rem 0;
+    width: 189px;
 }
 
 .menu--code-editor span, .menu--community span {
-     padding: 5% 6% 6% 5%;
+     padding: 0.9rem;
+
 }
 
-.code-editor {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-items: center; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 47rem;
-    height: 3.5rem;
-}
-
+/* Code Editor */
 
 .code-editor--content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 2rem;
-
-    position: absolute;
-    width: 47rem;
-    height: 22.875rem;
-    left: 21.5;
-    top: 8rem;
-
     background: #6BD1FF;
     border-radius: 0.5rem;
 }
@@ -144,78 +91,43 @@ main {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
-
-    position: static;
     width: 43rem;
     height: 18.875rem;
-    left: 2rem;
-    top: 2rem;
-
-/* Neutral/$dark-gray */
 
     background: #141414;
-/* $editor-shadow */
-
     box-shadow: 0rem 1rem 1.5rem rgba(0, 0, 0, 0.24);
     border-radius: 0.5rem;
-
-/* Inside Auto Layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0.625rem 0rem;
 }
 
 /* Mac Buttons */
 
-.mac-buttons {
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0.625rem 0rem;
-}
 
 .mac-buttons .mac-buttons--red {
-    position: absolute;
     width: 0.75rem;
     height: 0.75rem;
     left: 2.813rem;
     top: 3.438rem;
-    /* Mac/$mac_red */
     background: #FF5F56;
     border-radius: 50%;
 }
 
-.mac-buttons .mac-buttons--yellow{
-    position: absolute;
+ .mac-buttons .mac-buttons--yellow{
     width: 0.75rem;
     height: 0.75rem;
     left: 4.125rem;
     top: 3.438rem;
-    /* Mac/$mac_yellow */
     background: #FFBD2E;
     border-radius: 50%;
 }
 
 .mac-buttons .mac-buttons--green {
-
-    position: absolute;
     width: 0.75rem;
     height: 0.75rem;
-    left: 5.375rem;
-    top: 3.438rem;
-    /* Mac/$mac_green */
     background: #27C93F;
     border-radius: 50%;
 }
 
-
-.button {
-}
-
-.button button {
-    padding: 2%;
+button {
     width: 47rem;
     height: 3.5rem;
     background: rgba(80, 129, 251, 0.08);
