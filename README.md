@@ -10,8 +10,8 @@ A Front-End challenge created by [Alura](https://www.alura.com.br/challenges/fro
   - [Live](#live)
 <!-- - [Screenshot](#screenshot) -->
 <!-- - [My process](#my-process) -->
-  <!-- - [Built with](#built-with)
-  - [What I learned](#what-i-learned) -->
+  <!-- - [Built with](#built-with) -->
+  <!-- - [What I learned](#what-i-learned)  -->
 - [Author](#author)
 
 
@@ -29,7 +29,7 @@ The main features requested are:
 - As this editor is online, it should be responsive.
 
 ### Live
-- [Live](https://aramatsolrac.github.io/alura-challenge-front-end/)
+- [Live](https://aramatsolrac.github.io/alura-challenge-front-end/edit_code.html)
 
 
 <!-- ### Screenshot
