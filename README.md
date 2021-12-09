@@ -19,13 +19,13 @@ A Front-End challenge created by [Alura](https://www.alura.com.br/challenges/fro
 
 ### The challenge
 
-A programming content producer asked to build an online text editor to postcode snippets on their social networks. For him, the editor needs to have an accessible, simple, beautiful and functional layout to even share the tool with his followers and followers.
+A programming content producer asked to build an online text editor to postcode snippets on their social networks. For him, the editor needs to have an accessible, simple, beautiful, and functional layout to even share the tool with his followers.
 
 The main features requested are:
 
 - A field to select a language to be written;
-- A text field to write the code itself, and a button to view this code with syntax highlighted with a lovely theme;
-- This project must be scalable, to the point that if it is needed to add some functionality (feature), it is simple to do so;
+- A text field of writing the code, and a button to view this code with syntax highlighting and with a lovely theme;
+- This project must be scalable, to the point that if it is needed to add some functionality (feature), it will be simple to do so;
 - As this editor is online, it should be responsive.
 
 ### Live
