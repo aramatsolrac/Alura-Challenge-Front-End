@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="edit_code.css" rel="stylesheet">
 </head>
 
@@ -30,20 +31,13 @@
     </header>
 
     <main>
-        <section>
-            <div class="menu">
-                <h2>Menu</h2>
-                <div class="menu--code-editor">
-                    <img img src="./images/code.png" alt="" aria-hidden="true">
-                    <span>Code Editor</span>
-                </div>
-                <div class="menu--community">
-                    <img img src="./images/community.png" alt="" aria-hidden="true">
-                    <span>Community</span>
-                </div>
-            </div>
-        </section>
-
+        <nav class="menu">
+            <h2>Menu</h2>
+            <a href="#" class="menu--item"><img img src="./images/code.png" alt="" aria-hidden="true">
+                Code Editor</a>
+            <a href="#" class="menu--item"><img img src="./images/community.png" alt="" aria-hidden="true">
+                Community</a>
+        </nav>
         <section class="code-editor">
             <div class="code-editor--content">
                 <div class="code-editor--text">
@@ -52,51 +46,30 @@
                         <div class="mac-buttons--yellow"></div>
                         <div class="mac-buttons--green"></div>
                     </div>
-                    <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-                        const unfold = (f, seed) => {
-                        const go = (f, seed, acc) => {
-                        const res = f(seed)
-                        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                        }
-                        return go(f, seed, [])
-                        }
-                    </p>
+                    <textarea id="" name="" rows="11" cols="72" class="textarea"></textarea>
                 </div>
             </div>
-            <div class="button">
-                <button>Highlight View</button>
-            </div>
+            <button>Highlight View</button>
         </section>
 
-        <sidebar>
-            <h2>Your Project</h2>
-            <div class="your-project">
-                <form>
-                    <input type="text" id="pname" name="pname" placeholder="Yours project name">
-                    <input type="text" id="description" name="description" placeholder="Project Description">
-                </form>
-            </div>
-
-            <h2>Personalization</h2>
-            <div class="personalization">
-                <select name"langague" id="langague">
+        <fieldset>
+            <div class="sidebar">
+                <h2>Your Project</h2>
+                <input type="text" id="pname" name="pname" placeholder="Project Name" class="pname">
+                <textarea type="text" id="description" name="description" placeholder="Project Description"></textarea>
+                <h2>Personalization</h2>
+                <!-- <div class="personalization"> -->
+                <select name="language" id="language">
                     <option value="javascript">JavaScript</option>
                     <option value="css">CSS</option>
                     <option value="html">HTML</option>
                 </select>
-                <form>
-                    <input type="color" id="color" name="color" value="#6BD1FF"></input>
-                    <input type="submit" value="Save Project"></input>
-                </form>
+                <input type="color" id="color" name="color" value="#6BD1FF"></input>
+                <!-- </div> -->
+                <button type="submit" value="">Save Project</button>
             </div>
-        </sidebar>
+        </fieldset>
     </main>
 </body>
 
-
-<footer>
-
-</footer>
+</html>
