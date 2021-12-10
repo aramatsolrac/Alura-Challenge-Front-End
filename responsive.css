@@ -1,0 +1,253 @@
+/* Mobile */
+
+@media screen and (min-width: 320px) and (max-width: 414px){
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu, .header-box input, .header-box ul {
+        display: none;
+    }
+
+    .code-editor {
+        align-items: center;
+        width: 21.438rem;
+        margin: 0;
+        min-height: 1vh;
+    }
+
+    .code-editor--content {
+        height: 30.75rem;
+    }
+
+    .code-editor--text {
+        width: 17.438rem;
+        height: 26.75rem;
+    }
+
+    .code-editor--content textarea {
+        width: 12.5rem;
+        height: 26.75rem;
+    }
+
+    .code-editor button {
+        width: 21.438rem;
+        margin-bottom: 2rem;
+    }
+
+    .sidebar input, .sidebar textarea, .sidebar select, .sidebar button {
+        width: 21.438rem;
+    }
+
+    .sidebar {
+        min-height: 1vh;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 22rem;
+    }
+
+
+    .header-box--mobile-search {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .search-field {
+        width: 8rem;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 6.25rem;
+        background-image: url("./images/search.png");
+        background-repeat: no-repeat;
+        background-size: 1.25rem 1.25rem;
+        background-position: right;
+    }
+
+    /* Hamburger Menu */
+
+    .header-box--mobile-menu {
+        display: flex;
+    }
+
+    .bar {
+        display: flex;
+        width: 1.563rem;
+        height: 0.188rem;
+        margin: 0.313rem 0 0.313rem 1rem;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color:white;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #475569;
+        background-color: white;
+        text-decoration: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 3rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 40%;
+        border-radius: 0.625rem;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 0.5rem;
+        background-color: white;
+    }
+
+}
+
+
+/* IPad  */
+@media screen and (min-width: 420px) and (max-width: 1200px) {
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu, .header-box ul {
+        display: none;
+    }
+
+    .code-editor {
+        align-items: center;
+        width: 44rem;
+        margin: 0;
+        min-height: 1vh;
+    }
+
+    .code-editor--content {
+        height: 22.875rem;
+    }
+
+    .code-editor--text {
+        width: 40rem;
+        height: 18.75rem;
+    }
+
+    .code-editor--content textarea {
+        width: 39rem;
+        height: 18.125rem;
+    }
+
+    .code-editor button {
+        width: 44rem;
+        margin-bottom: 2rem;
+    }
+
+    .sidebar input, .sidebar textarea, .sidebar select, .sidebar button {
+        width: 44rem;
+    }
+
+    .sidebar {
+        min-height: 1vh;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 50rem;
+        margin: 2rem auto;
+    }
+
+    h1 img {
+        margin-right: 1rem;
+    }
+
+    .header-box--mobile-search {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .search-field {
+        display: none;
+    }
+
+    /*Search Area*/
+
+    .header-box input {
+        width: 25rem;
+        margin-left: 2rem;
+    }
+
+    /* Hamburger Menu */
+
+    .header-box--mobile-menu  {
+        display: flex;
+    }
+
+    .bar {
+        display: flex;
+        width: 1.563rem;
+        height: 0.188rem;
+        margin: 0.313rem 2.5rem 0.313rem 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color:white;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #475569;
+        background-color: white;
+        text-decoration: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 3rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 40%;
+        border-radius: 0.625rem;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 0.5rem;
+        background-color: white;
+    }
+
+}
