@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <title>Alura Challenge Front-End</title>
+    <link rel="stylesheet" href="./style//reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/19dc0097e6.js" crossorigin="anonymous"></script>
+    <link href="./style/base.css" rel="stylesheet">
+    <link href="./style/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+
+            <div class="header__logo">
+                <h1>
+                    <a href="#"><img src="./images/logo.png" alt="" aria-hidden="true"></a>
+                </h1>
+            </div>
+
+            <div class="header__search">
+                <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Search">
+            </div>
+
+            <div class="header__profile">
+                <button class="header__profile__button">
+                    <img class="header__profile__img" src="./images/profile.png" alt="Harry">
+                    <p class="header__profile__name">Harry</p>
+                </button>
+            </div>
+
+            <!-- Mobile -->
+
+            <div class="header__mobile">
+                <button class="header__mobile__search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="header__mobile__menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <div class="container__menu">
+                <nav class="container__menu__nav">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li class="container__menu__item">
+                            <i class="container__menu__item__icon active fas fa-code"></i>
+                            <a href="#" class="container__menu__item__name">Code Editor</a>
+                        </li>
+                        <li class="container__menu__item">
+                            <i class="container__menu__item__icon desactive fas fa-users"></i>
+                            <a href="#" class="container__menu__item__name">Community</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="container__code-editor">
+                <div class="container__code-editor__border">
+                    <div class="container__code-editor__text">
+                        <div class="container__code-editor__mac-buttons">
+                            <div class="container__code-editor__mac-buttons__red"></div>
+                            <div class="container__code-editor__mac-buttons__yellow"></div>
+                            <div class="container__code-editor__mac-buttons--green"></div>
+                        </div>
+                        <textarea class="container__code-editor__textarea" id="" name="" rows="10" cols="" spellcheck="false"></textarea>
+                    </div>
+                </div>
+                <div class="container__code-editor__button">
+                    <button>Highlight View</button>
+                </div>
+            </div>
+
+            <div class="container__form">
+                <form>
+                    <fieldset class="container__form__fieldset">
+                        <div class="container__form__fieldset__project">
+                            <legend>
+                                <h2>Your Project</h2>
+                            </legend>
+                            <input type="text" id="project-name" name="project-name" placeholder="Project Name">
+                            <textarea type="text" id="description" name="description" placeholder="Project Description"></textarea>
+                        </div>
+
+                        <div class="container__form__personalization">
+                            <legend>
+                                <h2>Personalization</h2>
+                            </legend>
+                            <div class="container__form__personalization__content">
+                                <select name="language" id="language">
+                                <option value="javascript">JavaScript</option>
+                                <option value="css">CSS</option>
+                                <option value="html">HTML</option>
+                            </select>
+                                <input type="color" id="color" name="color" value="#6BD1FF"></input>
+                            </div>
+                        </div>
+                        <div class="container__form__button">
+                            <button type="submit" value="">Save Project</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="menu.js"></script>
+</body>
+
+</html>
