@@ -29,7 +29,7 @@ The main features requested are:
 - As this editor is online, it should be responsive.
 
 ### Live
-- [Live](https://aramatsolrac.github.io/alura-challenge-front-end/edit_code.html)
+- [Live](https://aramatsolrac.github.io/alura-challenge-front-end/index.html)
 
 
 <!-- ### Screenshot
