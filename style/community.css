@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__codes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 2em;
+    width: 80%;
+}
+
+.container__code-editor {}
+
+.container__code-editor__border,
+.container__code-editor__text,
+.container__code-editor__border textarea {}
+
+.container__code-editor__border {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--sky-blue);
+}
+
+.container__code-editor__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background: var(--black);
+    box-shadow: 0rem 1rem 1.5rem var(--light-black);
+    border-radius: 0.5rem;
+    color: var(--white);
+    overflow: auto;
+}
+
+.container__code-editor__textarea {
+    background: var(--black);
+    resize: none;
+    border: none;
+    text-align: left;
+}
+
+
+/* mac buttons */
+
+.container__code-editor__mac-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 3.25rem;
+    margin-bottom: .75rem;
+}
+
+.container__code-editor__mac-buttons__red {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--red);
+    border-radius: 50%;
+}
+
+.container__code-editor__mac-buttons__yellow {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--yellow);
+    border-radius: 50%;
+}
+
+.container__code-editor__mac-buttons--green {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--green);
+    border-radius: 50%;
+}
