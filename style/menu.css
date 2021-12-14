@@ -1,0 +1,113 @@
+:root {
+    --darker-blue: #051D3B;
+    --dark-blue: #2D415B;
+    --medium-blue: rgba(255, 255, 255, 0.16);
+    --light-blue: #5081FB;
+    --lighter-blue: #7BA4FC;
+    --sky-blue: #6BD1FF;
+    --white: #FFF;
+    --black: #141414;
+    --light-black: rgba(0, 0, 0, 0.24);
+    --inter: 'Inter', sans-serif;
+}
+
+.container__menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container__menu__nav h2 {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+
+.container__menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container__menu a {
+    padding: .75rem;
+}
+
+.container__menu__item {
+    display: flex;
+    padding: .60rem .60rem .60rem 0;
+}
+
+.container__menu__item__icon {
+    background: transparent;
+    font-size: 1.25rem;
+    padding: .70rem .65rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.container__menu__item__name {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.active {
+    background: var(--lighter-blue);
+}
+
+.desactive {
+    background: var(--medium-blue);
+}
+
+
+/* .nav-link {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #475569;
+    background-color: white;
+    text-decoration: none;
+} */
+
+.nav-menu {
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    position: fixed;
+    /* display: flex;
+    justify-content: flex-end; */
+    right: -100%;
+    top: 6rem;
+    /* width: 100%; */
+}
+
+.nav-menu.active {
+    position: fixed;
+    right: 0%;
+    bottom: 5%;
+    background-color: var(--dark-blue);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    right: -100%;
+    top: 6rem;
+}
+
+.nav-menu ul {
+    background-color: var(--dark-blue);
+    padding: 0;
+    margin: 1% 2%;
+}
+
+.name-nav-menu {
+    padding: .70rem 0 0 .75rem;
+}
+
+.nav-menu-profile {
+    padding: .30rem 0 0 .75rem;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solidvar(--light-black);
+    border-bottom: 1px solid var(--medium-blue);
+}
