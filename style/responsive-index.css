@@ -64,7 +64,7 @@
     }
     .header__search input {
         width: 100%;
-        background: var(--medium-blue);
+        background: var(--input-select--normal);
         border: none;
         border-radius: 0.5rem;
         height: 3rem;
@@ -113,7 +113,7 @@
     }
     .header__search input {
         width: 100%;
-        background: var(--medium-blue);
+        background: var(--input-select--normal);
         border: none;
         border-radius: 0.5rem;
         height: 3rem;
@@ -137,6 +137,9 @@
     }
     .header__profile__button p {
         padding-left: 0.5rem;
+    }
+    .container__menu {
+        width: 50%;
     }
     .container {
         flex-direction: row;

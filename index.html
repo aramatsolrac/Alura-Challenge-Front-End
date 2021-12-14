@@ -12,10 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/19dc0097e6.js" crossorigin="anonymous"></script>
+    <link href="./style/root.css" rel="stylesheet">
     <link href="./style/header.css" rel="stylesheet">
     <link href="./style/menu.css" rel="stylesheet">
     <link href="./style/base.css" rel="stylesheet">
-    <link href="./style/responsive.css" rel="stylesheet">
+    <link href="./style/container.css" rel="stylesheet">
+    <link href="./style/index.css" rel="stylesheet">
+    <link href="./style/responsive-index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +36,7 @@
             </div>
 
             <div class="header__profile">
-                <button class="header__profile__button">
+                <button class="header__profile__button input-select">
                     <img class="header__profile__img" src="./images/profile.png" alt="Harry">
                     <p class="header__profile__name">Harry</p>
                 </button>
@@ -50,17 +53,17 @@
                     <div class="nav-menu">
                         <ul>
                             <li class="container__menu__item nav-item">
-                                <i class="container__menu__item__icon active fas fa-code"></i>
+                                <i class="container__menu__item__icon active button fas fa-code"></i>
                                 <a href="./index.html" class="container__menu__item__name name-nav-menu">Code Editor</a>
                             </li>
                             <li class="container__menu__item nav-item">
-                                <i class="container__menu__item__icon desactive fas fa-users"></i>
-                                <a href="./comunidade.html" class="container__menu__item__name name-nav-menu">Community</a>
+                                <i class="container__menu__item__icon desactive button fas fa-users"></i>
+                                <a href="./community.html" class="container__menu__item__name name-nav-menu">Community</a>
                             </li>
                             <hr>
-                            <li class="container__menu__item nav-item">
-                            <img src="./images/profile.png" alt="Harry">
-                            <p class="nav-menu-profile" >Harry</p>
+                            <li class="container__menu__item nav-item mobile">
+                                <img src="./images/profile.png" alt="Harry">
+                                <p class="nav-menu-profile" >Harry</p>
                             </li>
                         </ul>
                     </div>
@@ -78,12 +81,12 @@
                     <h2>Menu</h2>
                     <ul>
                         <li class="container__menu__item">
-                            <i class="container__menu__item__icon active fas fa-code"></i>
+                            <i class="container__menu__item__icon button active fas fa-code"></i>
                             <a href="./index.html" class="container__menu__item__name">Code Editor</a>
                         </li>
                         <li class="container__menu__item">
-                            <i class="container__menu__item__icon desactive fas fa-users"></i>
-                            <a href="./comunidade.html" class="container__menu__item__name">Community</a>
+                            <i class="container__menu__item__icon button desactive fas fa-users"></i>
+                            <a href="./community.html" class="container__menu__item__name">Community</a>
                         </li>
                     </ul>
                 </nav>
@@ -101,7 +104,7 @@
                     </div>
                 </div>
                 <div class="container__code-editor__button">
-                    <button>Highlight View</button>
+                    <button class="btn-outlined">Highlight View</button>
                 </div>
             </div>
 
@@ -130,7 +133,7 @@
                             </div>
                         </div>
                         <div class="container__form__button">
-                            <button type="submit" value="">Save Project</button>
+                            <button class="button" type="submit" value="">Save Project</button>
                         </div>
                     </fieldset>
                 </form>

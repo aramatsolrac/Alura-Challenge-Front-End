@@ -1,0 +1,26 @@
+:root {
+    --inter: 'Inter', sans-serif;
+    --sky-blue: #6BD1FF;
+    --white: #FFF;
+    --black: #141414;
+    --light-black: rgba(0, 0, 0, 0.24);
+    --darker-blue: #051D3B;
+    --dark-blue: #2D415B;
+    /* mac buttons */
+    --red: #FF5F56;
+    --yellow: #FFBD2E;
+    --green: #27C93F;
+    /* buttons */
+    --filled-normal: #5081FB;
+    --filled-hover: #7BA4FC;
+    --filled-pressed: #7BA4FC;
+    --filled-border: rgba(80, 129, 251, 0.72);
+    --filled-focus: #96B9FD;
+    --outlined-normal: rgba(80, 129, 251, 0.08);
+    --outlined-hover-pressed: rgba(80, 129, 251, 0.16);
+    --outlined-border-focus: rgba(80, 129, 251, 0.24);
+    /* input & select */
+    --input-select--normal: rgba(255, 255, 255, 0.16);
+    --input-select--hover: rgba(255, 255, 255, 0.24);
+    --mobile--hover: rgba(255, 255, 255, 0.24);
+}
