@@ -21,6 +21,9 @@
     .header__mobile__search {
         margin: 1rem;
     }
+    .nav-menu.active {
+        left: 40%;
+    }
     /* code editor container */
     .container__code-editor {
         margin: 0;
@@ -65,6 +68,9 @@
         border: none;
         border-radius: 0.5rem;
         height: 3rem;
+    }
+    .nav-menu.active {
+        left: 63%;
     }
     /* code editor container */
     .container__code-editor__border {
