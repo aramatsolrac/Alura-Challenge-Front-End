@@ -23,3 +23,12 @@ colorPicker.addEventListener("change", changeColor)
 function changeColor() {
     border.style.backgroundColor = colorPicker.value;
 }
+
+//highlight
+
+// const code =
+//     languageSelector.addEventListener("change", highlight)
+
+// function highlight {
+
+// };

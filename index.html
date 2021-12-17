@@ -19,8 +19,11 @@
     <link href="./style/container.css" rel="stylesheet">
     <link href="./style/index.css" rel="stylesheet">
     <link href="./style/responsive-index.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script> -->
+    <!-- <script>
+        hljs.initHighlightingOnLoad();
+    </script> -->
 </head>
 
 <body>
@@ -93,7 +96,6 @@
                     </ul>
                 </nav>
             </div>
-
             <div class="container__code-editor">
                 <div class="container__code-editor__border" id="code-border">
                     <div class="container__code-editor__text">
@@ -102,8 +104,16 @@
                             <div class="container__code-editor__mac-buttons__yellow"></div>
                             <div class="container__code-editor__mac-buttons--green"></div>
                         </div>
-                        <textarea class="container__code-editor__textarea" id="" name="" rows="10" cols="" spellcheck="false"></textarea>
-                        <!-- todo: change textarea to code -->
+                        <!-- <textarea class="container__code-editor__textarea" id="" name="" rows="10" cols="" spellcheck="false"></textarea> -->
+                        <pre>
+                            <code class="language-javascript code">
+                            $(document).ready(function() {
+                              $('pre code').each(function(i, block) {
+                                hljs.highlightBlock(block);
+                              });
+                            });
+                        </code>
+                    </pre>
                     </div>
                 </div>
                 <div class="container__code-editor__button">
@@ -144,6 +154,11 @@
         </section>
     </main>
     <script src="./script/index.js "></script>
+    <link rel="stylesheet" href="./script/highlight/styles/default.min.css">
+    <script src="./script/highlight/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
 
 </html>

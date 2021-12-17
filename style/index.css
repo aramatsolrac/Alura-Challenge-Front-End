@@ -39,12 +39,6 @@
     border-radius: 0.5rem;
     color: var(--white);
     overflow: auto;
-}
-
-.container__code-editor__textarea {
-    background: var(--black);
-    resize: none;
-    border: none;
     text-align: left;
 }
 
