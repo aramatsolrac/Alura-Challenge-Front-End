@@ -12,3 +12,14 @@ function mobileMenu() {
 function closeMenu() {
     navMenu.classList.remove("active");
 }
+
+//picker color
+const colorPicker = document.getElementById("color");
+const border = document.getElementById("code-border");
+
+colorPicker.addEventListener("change", changeColor)
+
+
+function changeColor() {
+    border.style.backgroundColor = colorPicker.value;
+}
