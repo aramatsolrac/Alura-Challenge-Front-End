@@ -26,9 +26,14 @@ function changeColor() {
 
 //highlight
 
-// const code =
-//     languageSelector.addEventListener("change", highlight)
+const code = document.getElementById("code");
+const languageSelector = document.getElementById("language");
+const btn = document.getElementById("highlight");
 
-// function highlight {
+btn.addEventListener("click", highlight);
 
-// };
+function highlight() {
+    code.classList.remove('language-javascript', 'language-xml', 'language-css', 'language-html');
+    code.classList.add(`language-${language.value}`);
+    hljs.highlightElement(code)
+};
