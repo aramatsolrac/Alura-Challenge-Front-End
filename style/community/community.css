@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.container__code-editor__project {
+    background-color: var(--container);
+    border-radius: .5rem;
+    color: white;
+}
+
+.container__code-editor__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background: var(--black);
+    box-shadow: 0rem 1rem 1.5rem var(--light-black);
+    border-radius: 0.5rem;
+    color: var(--white);
+    overflow: auto;
+    text-align: left;
+}
+
+.code {
+    border: none;
+    outline: none;
+    white-space: pre-line;
+}
+
+.container__code-editor__text::-webkit-scrollbar {
+    width: .5rem;
+    height: .5rem;
+    background-color: var(--light-black);
+    border-radius: 0.5rem;
+}
+
+.btn-profile,
+.btn-comment,
+.btn-heart {
+    background-color: inherit;
+    color: white;
+}
+
+.card-actions {
+    padding-bottom: .5rem;
+    font-size: 1rem;
+}
+
+.container__code-editor__project-details_metrics {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.container__code-editor__project-details {
+    margin: 1rem;
+}
+
+.metrics-button,
+.btn-profile {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+
+.metrics-button button {
+    border: none;
+    width: 100%;
+}
+
+.btn-profile p {
+    padding: .3rem 0 0 .5rem;
+}
+
+.container__code-editor__border,
+.container__code-editor__button,
+.container__code-editor__text,
+.container__code-editor__border textarea {
+    width: 100%;
+}
+
+.container__code-editor__border {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--sky-blue);
+}
+
+.container__code-editor__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background: var(--black);
+    box-shadow: 0rem 1rem 1.5rem var(--light-black);
+    border-radius: 0.5rem;
+    color: var(--white);
+    overflow: auto;
+}
+
+.container__code-editor__textarea {
+    background: var(--black);
+    resize: none;
+    border: none;
+    text-align: left;
+}
+
+
+/* mac buttons */
+
+.container__code-editor__mac-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 3.25rem;
+    margin-bottom: .75rem;
+}
+
+.container__code-editor__mac-buttons__red {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--red);
+    border-radius: 50%;
+}
+
+.container__code-editor__mac-buttons__yellow {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--yellow);
+    border-radius: 50%;
+}
+
+.container__code-editor__mac-buttons--green {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--green);
+    border-radius: 50%;
+}
