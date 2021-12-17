@@ -1,5 +1,4 @@
-//hamburguer manu
-
+//hamburguer menu
 const navMenu = document.querySelector(".nav-menu");
 const hamburguerBtn = document.querySelector(".header__mobile__menu");
 
@@ -25,7 +24,6 @@ function changeColor() {
 }
 
 //highlight
-
 const code = document.getElementById("code");
 const languageSelector = document.getElementById("language");
 const btn = document.getElementById("highlight");
