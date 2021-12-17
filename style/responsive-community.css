@@ -155,7 +155,7 @@
         padding-left: 0.5rem;
     }
     .container__menu {
-        width: 50%;
+        width: 31%;
     }
     .container {
         flex-direction: row;
@@ -173,11 +173,9 @@
         margin-left: 5%;
     }
     .container__codes {
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
         width: 100%;
-        padding: 0 3%;
     }
 }

@@ -1,11 +1,10 @@
-html,
-* {
+html {
     color: var(--white);
-    background-color: var(--darker-blue)
 }
 
 body {
-    font-family: var(--inter)
+    font-family: var(--inter);
+    background-color: var(--darker-blue)
 }
 
 ::placeholder,

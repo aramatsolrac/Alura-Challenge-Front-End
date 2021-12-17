@@ -6,6 +6,7 @@
     --light-black: rgba(0, 0, 0, 0.24);
     --darker-blue: #051D3B;
     --dark-blue: #2D415B;
+    --container: rgba(0, 0, 0, 0.16);
     /* mac buttons */
     --red: #FF5F56;
     --yellow: #FFBD2E;
@@ -23,4 +24,9 @@
     --input-select--normal: rgba(255, 255, 255, 0.16);
     --input-select--hover: rgba(255, 255, 255, 0.24);
     --mobile--hover: rgba(255, 255, 255, 0.24);
+    /* code editor  */
+    --green: #9AFF6B;
+    --purple: #6B83FF;
+    --orange: #FFC46B;
+    --pink: #FF6BCD;
 }

@@ -4,7 +4,28 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0 1%;
+}
+
+.container__code-editor__project {
+    background-color: var(--container);
+    border-radius: .5rem;
+    color: white;
+}
+
+.btn-profile,
+.btn-comment,
+.btn-heart {
+    background-color: inherit;
+    color: white;
+}
+
+
+/* .container__code-editor__project {
+    border-radius: 1rem;
+} */
+
+.card-actions {
+    padding-bottom: .5rem;
 }
 
 .container__code-editor__project-details_metrics {
@@ -17,16 +38,20 @@
     margin: 1rem;
 }
 
-.metrics-button {
+.metrics-button,
+.btn-profile {
     display: flex;
-    /* width: 100%; */
+    justify-content: space-between;
+    border: none;
 }
 
 .metrics-button button {
     border: none;
-    padding: .75rem;
-    margin: 0;
     width: 100%;
+}
+
+.btn-profile p {
+    padding: .3rem 0 0 .5rem;
 }
 
 .container__code-editor__border,
