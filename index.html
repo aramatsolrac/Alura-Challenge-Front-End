@@ -12,18 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/19dc0097e6.js" crossorigin="anonymous"></script>
-    <link href="./style/root.css" rel="stylesheet">
+    <link href="./style/colours.css" rel="stylesheet">
     <link href="./style/header.css" rel="stylesheet">
     <link href="./style/menu.css" rel="stylesheet">
     <link href="./style/base.css" rel="stylesheet">
-    <link href="./style/container.css" rel="stylesheet">
-    <link href="./style/index.css" rel="stylesheet">
-    <link href="./style/responsive-index.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"> -->
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script> -->
-    <!-- <script>
-        hljs.initHighlightingOnLoad();
-    </script> -->
+    <link href="./style/index/index.css" rel="stylesheet">
+    <link href="./style/index/responsive-index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -50,9 +44,11 @@
             <!-- Mobile -->
 
             <div class="header__mobile">
+
                 <button class="header__mobile__search">
                     <i class="fas fa-search"></i>
                 </button>
+
                 <button class="header__mobile__menu">
                     <i class="fas fa-bars"></i>
                     <div class="nav-menu">
@@ -73,6 +69,7 @@
                         </ul>
                     </div>
                 </button>
+
             </div>
 
         </nav>
@@ -97,6 +94,7 @@
                 </nav>
             </div>
             <div class="container__code-editor">
+
                 <div class="container__code-editor__border" id="code-border">
                     <div class="container__code-editor__text">
                         <div class="container__code-editor__mac-buttons">
@@ -104,21 +102,27 @@
                             <div class="container__code-editor__mac-buttons__yellow"></div>
                             <div class="container__code-editor__mac-buttons--green"></div>
                         </div>
-                        <!-- <textarea class="container__code-editor__textarea" id="" name="" rows="10" cols="" spellcheck="false"></textarea> -->
                         <pre>
-                            <code class="language-javascript code">
-                            $(document).ready(function() {
-                              $('pre code').each(function(i, block) {
-                                hljs.highlightBlock(block);
-                              });
-                            });
-                        </code>
+                           <code id="code" class="code">
+                            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                            const unfold = (f, seed) => {
+                            const go = (f, seed, acc) => {
+                                const res = f(seed)
+                                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                            }
+                            return go(f, seed, [])
+                            }
+                         </code>
                     </pre>
                     </div>
                 </div>
                 <div class="container__code-editor__button">
-                    <button class="btn-outlined">Highlight View</button>
+                    <button class="btn-outlined" id="highlight">Highlight View</button>
                 </div>
+
             </div>
 
             <div class="container__form">
@@ -141,10 +145,11 @@
                                 <option value="javascript">JavaScript</option>
                                 <option value="css">CSS</option>
                                 <option value="html">HTML</option>
-                            </select>
+                                </select>
                                 <input type="color" id="color" name="color" value="#6BD1FF"></input>
                             </div>
                         </div>
+
                         <div class="container__form__button">
                             <button class="button" type="submit" value="">Save Project</button>
                         </div>
@@ -154,11 +159,8 @@
         </section>
     </main>
     <script src="./script/index.js "></script>
-    <link rel="stylesheet" href="./script/highlight/styles/default.min.css">
+    <link rel="stylesheet" href="./script/highlight/styles/tomorrow-night-blue.min.css">
     <script src="./script/highlight/highlight.min.js"></script>
-    <script>
-        hljs.highlightAll();
-    </script>
 </body>
 
 </html>

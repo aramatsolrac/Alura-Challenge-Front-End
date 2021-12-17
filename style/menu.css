@@ -21,13 +21,13 @@
 
 .container__menu__item {
     display: flex;
-    padding: .60rem .60rem 0 0;
+    padding: .40rem .40rem 0 0;
 }
 
 .container__menu__item__icon {
     background: transparent;
     font-size: 1.25rem;
-    padding: .70rem .65rem;
+    padding: .60rem .65rem;
     border-radius: 1rem;
     align-items: center;
     margin-top: 0.188rem;

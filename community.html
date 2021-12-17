@@ -12,13 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/19dc0097e6.js" crossorigin="anonymous"></script>
-    <link href="./style/root.css" rel="stylesheet">
+    <link href="./style/colours.css" rel="stylesheet">
     <link href="./style/header.css" rel="stylesheet">
     <link href="./style/menu.css" rel="stylesheet">
     <link href="./style/base.css" rel="stylesheet">
     <link href="./style/container.css" rel="stylesheet">
-    <link href="./style/community.css" rel="stylesheet">
-    <link href="./style/responsive-community.css" rel="stylesheet">
+    <link href="./style/community/community.css" rel="stylesheet">
+    <link href="./style/community/responsive-community.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,9 +45,11 @@
             <!-- Mobile -->
 
             <div class="header__mobile">
+
                 <button class="header__mobile__search">
                     <i class="fas fa-search"></i>
                 </button>
+
                 <button class="header__mobile__menu">
                     <i class="fas fa-bars"></i>
                     <div class="nav-menu">
@@ -68,6 +70,7 @@
                         </ul>
                     </div>
                 </button>
+
             </div>
 
         </nav>
@@ -95,6 +98,7 @@
             <div class="container__codes">
                 <div class="container__code-editor">
                     <div class="container__code-editor__project">
+
                         <div class="container__code-editor__border" style="background-color: var(--green)">
                             <div class="container__code-editor__text">
                                 <div class="container__code-editor__mac-buttons">
@@ -102,9 +106,22 @@
                                     <div class="container__code-editor__mac-buttons__yellow"></div>
                                     <div class="container__code-editor__mac-buttons--green"></div>
                                 </div>
-                                <textarea class="container__code-editor__textarea" id="" name="" rows="10" cols="" spellcheck="false"></textarea>
+                                <pre>
+                                    <code id="code" class="code">
+                                     const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                                     const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                                     const unfold = (f, seed) => {
+                                     const go = (f, seed, acc) => {
+                                         const res = f(seed)
+                                         return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                     }
+                                     return go(f, seed, [])
+                                     }
+                                    </code>
+                                </pre>
                             </div>
                         </div>
+
                         <div class="card-actions">
                             <div class="container__code-editor__project-details">
                                 <h1>Project Name</h1>
@@ -112,7 +129,6 @@
                             </div>
                             <div class="container__code-editor__project-details_metrics">
                                 <div class="metrics-button">
-
                                     <button class="btn-comment">
                                     <i class="fas fa-comment"></i>
                                     <span>9</span>
@@ -125,17 +141,19 @@
 
                                 <div class="">
                                     <button class="btn-profile">
-                                    <img src="./images/profile.png" alt="Harry">
-                                    <p>@Harry</p>
-                                </button>
+                                        <img src="./images/profile.png" alt="Harry">
+                                        <p>@Harry</p>
+                                    </button>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
                 <div class="container__code-editor">
                     <div class="container__code-editor__project">
+
                         <div class="container__code-editor__border" style="background-color: var(--purple)">
                             <div class=" container__code-editor__text ">
                                 <div class="container__code-editor__mac-buttons ">
@@ -143,9 +161,22 @@
                                     <div class="container__code-editor__mac-buttons__yellow "></div>
                                     <div class="container__code-editor__mac-buttons--green "></div>
                                 </div>
-                                <textarea class="container__code-editor__textarea " id=" " name=" " rows="10 " cols=" " spellcheck="false "></textarea>
+                                <pre>
+                                    <code id="code" class="code">
+                                     const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                                     const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                                     const unfold = (f, seed) => {
+                                     const go = (f, seed, acc) => {
+                                         const res = f(seed)
+                                         return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                     }
+                                     return go(f, seed, [])
+                                     }
+                                    </code>
+                                </pre>
                             </div>
                         </div>
+
                         <div class="card-actions ">
                             <div class="container__code-editor__project-details ">
                                 <h1>Project Name</h1>
@@ -153,29 +184,30 @@
                             </div>
                             <div class="container__code-editor__project-details_metrics ">
                                 <div class="metrics-button ">
-
                                     <button class="btn-comment ">
-                                    <i class="fas fa-comment "></i>
-                                    <span>9</span>
-                                </button>
+                                        <i class="fas fa-comment "></i>
+                                        <span>9</span>
+                                    </button>
                                     <button class="btn-heart ">
-                                    <i class="fas fa-heart "></i>
-                                    <span>9</span>
-                                </button>
+                                        <i class="fas fa-heart "></i>
+                                        <span>9</span>
+                                    </button>
                                 </div>
-                                <div class=" ">
+                                <div>
                                     <button class="btn-profile ">
-                                    <img src="./images/profile.png " alt="Harry ">
-                                    <p>@Harry</p>
-                                </button>
+                                        <img src="./images/profile.png " alt="Harry ">
+                                        <p>@Harry</p>
+                                    </button>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
                 <div class="container__code-editor ">
                     <div class="container__code-editor__project ">
+
                         <div class="container__code-editor__border " style="background-color: var(--orange) ">
                             <div class="container__code-editor__text ">
                                 <div class="container__code-editor__mac-buttons ">
@@ -183,7 +215,16 @@
                                     <div class="container__code-editor__mac-buttons__yellow "></div>
                                     <div class="container__code-editor__mac-buttons--green "></div>
                                 </div>
-                                <textarea class="container__code-editor__textarea " id=" " name=" " rows="10 " cols=" " spellcheck="false "></textarea>
+                                <pre>
+                                    <code id="code" class="code">
+                                        let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg";
+                                        let modelURL = "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb";
+                                        // LANDSCAPE / PORTRAIT
+                                        let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+                                        let windowRatio = window.innerWidth / window.innerHeight;
+                                        let isLandscape = (windowRatio > 1) ? true : false;
+                                  </code>
+                                </pre>
                             </div>
                         </div>
 
@@ -194,30 +235,31 @@
                             </div>
                             <div class="container__code-editor__project-details_metrics ">
                                 <div class="metrics-button ">
-
                                     <button class="btn-comment ">
-                                    <i class="fas fa-comment "></i>
-                                    <span>9</span>
-                                </button>
+                                        <i class="fas fa-comment "></i>
+                                        <span>9</span>
+                                    </button>
                                     <button class="btn-heart ">
-                                    <i class="fas fa-heart "></i>
-                                    <span>9</span>
-                                </button>
+                                        <i class="fas fa-heart "></i>
+                                        <span>9</span>
+                                    </button>
                                 </div>
 
-                                <div class=" ">
+                                <div>
                                     <button class="btn-profile ">
-                                    <img src="./images/profile.png " alt="Harry ">
-                                    <p>@Harry</p>
-                                </button>
+                                        <img src="./images/profile.png " alt="Harry ">
+                                        <p>@Harry</p>
+                                    </button>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
                 <div class="container__code-editor ">
                     <div class="container__code-editor__project ">
+
                         <div class="container__code-editor__border " style="background-color: var(--pink) ">
                             <div class=" container__code-editor__text ">
                                 <div class="container__code-editor__mac-buttons ">
@@ -225,9 +267,19 @@
                                     <div class="container__code-editor__mac-buttons__yellow "></div>
                                     <div class="container__code-editor__mac-buttons--green "></div>
                                 </div>
-                                <textarea class="container__code-editor__textarea " id=" " name=" " rows="10 " cols=" " spellcheck="false "></textarea>
+                                <pre>
+                                    <code id="code" class="code">
+                                        let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg";
+                                        let modelURL = "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb";
+                                        // LANDSCAPE / PORTRAIT
+                                        let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+                                        let windowRatio = window.innerWidth / window.innerHeight;
+                                        let isLandscape = (windowRatio > 1) ? true : false;
+                                    </code>
+                                </pre>
                             </div>
                         </div>
+
                         <div class="card-actions ">
                             <div class="container__code-editor__project-details ">
                                 <h1>Project Name</h1>
@@ -235,25 +287,26 @@
                             </div>
                             <div class="container__code-editor__project-details_metrics ">
                                 <div class="metrics-button ">
-
                                     <button class="btn-comment ">
-                                    <i class="fas fa-comment "></i>
-                                    <span>9</span>
-                                </button>
+                                        <i class="fas fa-comment "></i>
+                                        <span>9</span>
+                                    </button>
                                     <button class="btn-heart ">
-                                    <i class="fas fa-heart "></i>
-                                    <span>9</span>
-                                </button>
+                                        <i class="fas fa-heart "></i>
+                                        <span>9</span>
+                                    </button>
                                 </div>
 
-                                <div class=" ">
+                                <div>
                                     <button class="btn-profile ">
-                                    <img src="./images/profile.png " alt="Harry ">
-                                    <p>@Harry</p>
-                                </button>
+                                        <img src="./images/profile.png " alt="Harry ">
+                                        <p>@Harry</p>
+                                    </button>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
