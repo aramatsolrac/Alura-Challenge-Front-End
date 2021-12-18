@@ -111,7 +111,7 @@
 
 /* laptop */
 
-@media screen and (min-width: 1025px) and (max-width: 1340px) {
+@media screen and (min-width: 1024px) {
     .header__mobile__menu,
     .header__mobile__search {
         display: none;
@@ -170,83 +170,7 @@
     }
     .container__code-editor__text {
         max-height: 27rem;
-    }
-    .container__form {
-        display: flex;
-        justify-content: end;
-        width: 50%;
-        margin-left: 5%;
-    }
-    .container__codes {
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px 2em;
-        width: 100%;
-        /* padding: 0 3%; */
-    }
-}
-
-@media screen and (min-width: 1341px) {
-    .header__mobile__menu,
-    .header__mobile__search {
-        display: none;
-    }
-    .header,
-    .container {
-        /* margin: 2%; */
-        padding: 1%;
-        margin: 0;
-    }
-    .header__logo {
-        width: 50%;
-    }
-    .header__search {
-        display: flex;
-        width: 100%;
-    }
-    .header__search input {
-        width: 100%;
-        background: var(--input-select--normal);
-        border: none;
-        border-radius: 0.5rem;
-        height: 3rem;
-    }
-    .header__profile {
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        align-items: center;
-        width: 50%;
-        margin: 0 0 0 5%;
-    }
-    .header__profile__button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color: transparent;
-        border-radius: 1rem;
-        border: none;
-        color: var(--white);
-    }
-    .header__profile__button p {
-        padding-left: 0.5rem;
-    }
-    .container__menu {
-        width: 31%;
-    }
-    .container {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-        width: 100%;
-    }
-    .container__code-editor {
-        width: 100%;
-    }
-    .container__code-editor__text {
-        max-height: 27rem;
-        min-height: 27rem;
+        min-height: 15rem;
     }
     .container__form {
         display: flex;
