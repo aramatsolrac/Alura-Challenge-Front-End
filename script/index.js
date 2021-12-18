@@ -16,7 +16,7 @@ function closeMenu() {
 const colorPicker = document.getElementById("color");
 const border = document.getElementById("code-border");
 
-colorPicker.addEventListener("change", changeColor)
+colorPicker.addEventListener("change", changeColor);
 
 
 function changeColor() {

@@ -130,20 +130,20 @@
                             <div class="container__code-editor__project-details_metrics">
                                 <div class="metrics-button">
                                     <button class="btn-comment">
-                                    <i class="fas fa-comment"></i>
-                                    <span>9</span>
-                                </button>
-                                    <button class="btn-heart">
-                                    <i class="fas fa-heart"></i>
-                                    <span>9</span>
-                                </button>
+                                        <i class="fas fa-comment"></i>
+                                        <span>0</span>
+                                    </button>
+                                    <button class="btn-heart" id="like">
+                                        <i class="fas fa-heart" id="heart"></i>
+                                        <span id="like-number">0</span>
+                                    </button>
                                 </div>
 
-                                <div class="">
+                                <div>
                                     <button class="btn-profile">
-                                        <img src="./images/profile.png" alt="Harry">
-                                        <p>@Harry</p>
-                                    </button>
+                                    <img src="./images/profile.png" alt="Harry">
+                                    <p>@Harry</p>
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -162,18 +162,18 @@
                                     <div class="container__code-editor__mac-buttons--green "></div>
                                 </div>
                                 <pre>
-                                    <code id="code" class="code">
-                                     const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-                                     const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                                     const unfold = (f, seed) => {
-                                     const go = (f, seed, acc) => {
+                                <code id="code" class="code">
+                                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                                    const unfold = (f, seed) => {
+                                    const go = (f, seed, acc) => {
                                          const res = f(seed)
                                          return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                                     }
-                                     return go(f, seed, [])
-                                     }
-                                    </code>
-                                </pre>
+                                    }
+                                    return go(f, seed, [])
+                                    }
+                                </code>
+                            </pre>
                             </div>
                         </div>
 
@@ -183,21 +183,21 @@
                                 <p>Project description</p>
                             </div>
                             <div class="container__code-editor__project-details_metrics ">
-                                <div class="metrics-button ">
-                                    <button class="btn-comment ">
-                                        <i class="fas fa-comment "></i>
-                                        <span>9</span>
+                                <div class="metrics-button">
+                                    <button class="btn-comment">
+                                        <i class="fas fa-comment"></i>
+                                        <span>0</span>
                                     </button>
-                                    <button class="btn-heart ">
-                                        <i class="fas fa-heart "></i>
-                                        <span>9</span>
+                                    <button class="btn-heart" id="like">
+                                        <i class="fas fa-heart" id="heart"></i>
+                                        <span id="like-number">0</span>
                                     </button>
                                 </div>
                                 <div>
                                     <button class="btn-profile ">
-                                        <img src="./images/profile.png " alt="Harry ">
-                                        <p>@Harry</p>
-                                    </button>
+                                    <img src="./images/profile.png " alt="Harry ">
+                                    <p>@Harry</p>
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -216,15 +216,15 @@
                                     <div class="container__code-editor__mac-buttons--green "></div>
                                 </div>
                                 <pre>
-                                    <code id="code" class="code">
-                                        let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg";
-                                        let modelURL = "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb";
-                                        // LANDSCAPE / PORTRAIT
-                                        let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
-                                        let windowRatio = window.innerWidth / window.innerHeight;
-                                        let isLandscape = (windowRatio > 1) ? true : false;
-                                  </code>
-                                </pre>
+                                <code id="code" class="code">
+                                    let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg";
+                                    let modelURL = "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb";
+                                    // LANDSCAPE / PORTRAIT
+                                    let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+                                    let windowRatio = window.innerWidth / window.innerHeight;
+                                    let isLandscape = (windowRatio > 1) ? true : false;
+                                </code>
+                            </pre>
                             </div>
                         </div>
 
@@ -234,22 +234,22 @@
                                 <p>Project description</p>
                             </div>
                             <div class="container__code-editor__project-details_metrics ">
-                                <div class="metrics-button ">
-                                    <button class="btn-comment ">
-                                        <i class="fas fa-comment "></i>
-                                        <span>9</span>
+                                <div class="metrics-button">
+                                    <button class="btn-comment">
+                                        <i class="fas fa-comment"></i>
+                                        <span>0</span>
                                     </button>
-                                    <button class="btn-heart ">
-                                        <i class="fas fa-heart "></i>
-                                        <span>9</span>
+                                    <button class="btn-heart" id="like">
+                                        <i class="fas fa-heart" id="heart"></i>
+                                        <span id="like-number">0</span>
                                     </button>
                                 </div>
 
                                 <div>
                                     <button class="btn-profile ">
-                                        <img src="./images/profile.png " alt="Harry ">
-                                        <p>@Harry</p>
-                                    </button>
+                                    <img src="./images/profile.png " alt="Harry ">
+                                    <p>@Harry</p>
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -268,15 +268,15 @@
                                     <div class="container__code-editor__mac-buttons--green "></div>
                                 </div>
                                 <pre>
-                                    <code id="code" class="code">
-                                        let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg";
-                                        let modelURL = "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb";
-                                        // LANDSCAPE / PORTRAIT
-                                        let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
-                                        let windowRatio = window.innerWidth / window.innerHeight;
-                                        let isLandscape = (windowRatio > 1) ? true : false;
-                                    </code>
-                                </pre>
+                                <code id="code" class="code">
+                                    let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg";
+                                    let modelURL = "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb";
+                                    // LANDSCAPE / PORTRAIT
+                                    let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+                                    let windowRatio = window.innerWidth / window.innerHeight;
+                                    let isLandscape = (windowRatio > 1) ? true : false;
+                                </code>
+                            </pre>
                             </div>
                         </div>
 
@@ -286,22 +286,22 @@
                                 <p>Project description</p>
                             </div>
                             <div class="container__code-editor__project-details_metrics ">
-                                <div class="metrics-button ">
-                                    <button class="btn-comment ">
-                                        <i class="fas fa-comment "></i>
-                                        <span>9</span>
+                                <div class="metrics-button">
+                                    <button class="btn-comment">
+                                        <i class="fas fa-comment"></i>
+                                        <span>0</span>
                                     </button>
-                                    <button class="btn-heart ">
-                                        <i class="fas fa-heart "></i>
-                                        <span>9</span>
+                                    <button class="btn-heart" id="like">
+                                        <i class="fas fa-heart" id="heart"></i>
+                                        <span id="like-number">0</span>
                                     </button>
                                 </div>
 
                                 <div>
                                     <button class="btn-profile ">
-                                        <img src="./images/profile.png " alt="Harry ">
-                                        <p>@Harry</p>
-                                    </button>
+                                    <img src="./images/profile.png " alt="Harry ">
+                                    <p>@Harry</p>
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -312,7 +312,7 @@
             </div>
         </section>
     </main>
-    <script src="./script/index.js "></script>
+    <script src="./script/community.js "></script>
 </body>
 
 </html>
