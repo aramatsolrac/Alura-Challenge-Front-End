@@ -23,6 +23,7 @@
 .nav-menu *,
 .header__profile * {
     background-color: transparent;
+    font-size: 1rem;
 }
 
 .header__mobile__search,
@@ -30,4 +31,20 @@
     background-color: inherit;
     border: none;
     color: var(--white);
+}
+
+.header__mobile__search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__mobile__search input {
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: .5rem;
+    max-width: 9.3rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    margin: 0;
 }

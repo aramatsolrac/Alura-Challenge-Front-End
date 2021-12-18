@@ -20,3 +20,29 @@ function mobileMenu() {
         showMenu = false;
     }
 };
+
+//search bar
+
+const searchBtn = document.getElementById("search-mobile");
+const searchBar = document.getElementById("search-bar");
+const searchIcon = document.getElementById("search-icon");
+const xSearch = document.getElementById("close-search");
+let showBar = false;
+
+searchBtn.addEventListener("click", mobileSearch);
+
+function mobileSearch() {
+    if (!showMenu) {
+        searchBar.style.display = "flex";
+        xSearch.style.display = "flex";
+        searchIcon.style.display = "none";
+        showMenu = true;
+    } else {
+        searchBar.style.display = "none";
+        xSearch.style.display = "none";
+        searchIcon.style.display = "flex";
+        showMenu = false;
+    }
+};
+
+//menu active/desactive

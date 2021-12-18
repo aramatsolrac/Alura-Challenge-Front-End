@@ -45,21 +45,22 @@
 
             <div class="header__mobile">
 
-                <button class="header__mobile__search">
-                    <i class="fas fa-search"></i>
+                <button id="search-mobile" class="header__mobile__search">
+                        <input type="search" id="search-bar" placeholder="Search" style="display: none;">
+                        <i id="search-icon" class="fas fa-search" aria-hidden="true"></i>
+                        <i id="close-search" class="fas fa-times" style="display: none;"></i>
                 </button>
-
                 <button class="header__mobile__menu">
                     <i id="close-menu" class="fas fa-times" style="display: none;"></i>
                     <i id="bar-menu" class="fas fa-bars"></i>
                     <div class="nav-menu">
                         <ul>
                             <li class="container__menu__item nav-item">
-                                <i class="container__menu__item__icon active button fas fa-code"></i>
+                                <i class="container__menu__item__icon active button fas fa-code" aria-hidden="true"></i>
                                 <a href="./index.html" class="container__menu__item__name name-nav-menu">Code Editor</a>
                             </li>
                             <li class="container__menu__item nav-item">
-                                <i class="container__menu__item__icon desactive button fas fa-users"></i>
+                                <i class="container__menu__item__icon desactive button fas fa-users" aria-hidden="true"></i>
                                 <a href="./community.html" class="container__menu__item__name name-nav-menu">Community</a>
                             </li>
                             <hr>
@@ -84,11 +85,11 @@
                     <h2>Menu</h2>
                     <ul>
                         <li class="container__menu__item">
-                            <i class="container__menu__item__icon button active fas fa-code"></i>
+                            <i class="container__menu__item__icon button fas fa-code" aria-hidden="true"></i>
                             <a href="./index.html" class="container__menu__item__name">Code Editor</a>
                         </li>
                         <li class="container__menu__item">
-                            <i class="container__menu__item__icon button desactive fas fa-users"></i>
+                            <i class="container__menu__item__icon button fas fa-users" aria-hidden="true"></i>
                             <a href="./community.html" class="container__menu__item__name">Community</a>
                         </li>
                     </ul>

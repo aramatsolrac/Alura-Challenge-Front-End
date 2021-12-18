@@ -70,9 +70,19 @@
 }
 
 .container__code-editor__text::-webkit-scrollbar {
-    width: .5rem;
-    height: .5rem;
-    background-color: var(--light-black);
+    width: .7rem;
+    height: .7rem;
+    background-color: var(--outlined-normal);
+    border-radius: 0.5rem;
+}
+
+.container__code-editor__text::-webkit-scrollbar-thumb {
+    background-color: var(--input-select--normal);
+    border-radius: 0.5rem;
+}
+
+.container__code-editor__text::-webkit-scrollbar-thumb:hover {
+    background-color: var(--input-select--hover);
     border-radius: 0.5rem;
 }
 

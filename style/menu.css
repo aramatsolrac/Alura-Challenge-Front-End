@@ -1,6 +1,7 @@
 .container__menu {
     display: flex;
     flex-direction: column;
+    font-size: .75rem;
 }
 
 .container__menu__nav h2 {
@@ -27,8 +28,10 @@
 .container__menu__item__icon {
     background: transparent;
     font-size: 1.25rem;
-    padding: .60rem .65rem;
-    border-radius: 1rem;
+    padding: .88rem .60rem 0rem .73rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
     align-items: center;
     margin-top: 0.188rem;
 }
