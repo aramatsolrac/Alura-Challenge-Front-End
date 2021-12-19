@@ -4,12 +4,36 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0 1%;
+}
+
+
+/* .container__code-editor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+} */
+
+.container__code-editor__border,
+.container__code-editor__button,
+.container__code-editor__text,
+.container__code-editor__border code {
+    width: 100%;
 }
 
 .container__code-editor__project {
     background-color: var(--container);
     border-radius: .5rem;
     color: white;
+}
+
+.container__code-editor__border {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--sky-blue);
 }
 
 .container__code-editor__text {
@@ -26,6 +50,12 @@
     font-size: .75rem;
 }
 
+.code {
+    border: none;
+    outline: none;
+    white-space: pre-line;
+}
+
 .code-ident {
     border: none;
     outline: none;
@@ -38,6 +68,26 @@
     background-color: var(--light-black);
     border-radius: 0.5rem;
 }
+
+.container__code-editor__text::-webkit-scrollbar {
+    width: .7rem;
+    height: .7rem;
+    background-color: var(--outlined-normal);
+    border-radius: 0.5rem;
+}
+
+.container__code-editor__text::-webkit-scrollbar-thumb {
+    background-color: var(--input-select--normal);
+    border-radius: 0.5rem;
+}
+
+.container__code-editor__text::-webkit-scrollbar-thumb:hover {
+    background-color: var(--input-select--hover);
+    border-radius: 0.5rem;
+}
+
+
+/* card-actions */
 
 .btn-profile,
 .btn-comment,
@@ -82,38 +132,6 @@
     padding: .3rem 0 0 .5rem;
 }
 
-.container__code-editor__border,
-.container__code-editor__button,
-.container__code-editor__text,
-.container__code-editor__border textarea {
-    width: 100%;
-}
-
-.container__code-editor__border {
-    padding: 2rem;
-    border-radius: 0.5rem;
-    background-color: var(--sky-blue);
-}
-
-.container__code-editor__text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-    background: var(--black);
-    box-shadow: 0rem 1rem 1.5rem var(--light-black);
-    border-radius: 0.5rem;
-    color: var(--white);
-    overflow: auto;
-}
-
-.container__code-editor__textarea {
-    background: var(--black);
-    resize: none;
-    border: none;
-    text-align: left;
-}
-
 
 /* mac buttons */
 
@@ -143,4 +161,10 @@
     height: 0.75rem;
     background: var(--green);
     border-radius: 50%;
+}
+
+@media screen and (min-width: 1025px) {
+    .container__menu {
+        width: 31%;
+    }
 }

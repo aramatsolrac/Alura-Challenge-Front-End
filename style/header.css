@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    margin: 3%;
+    /* margin: 3%; */
+    padding: 0 1.5rem;
     height: 6rem;
 }
 

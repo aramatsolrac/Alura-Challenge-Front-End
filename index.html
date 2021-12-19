@@ -16,8 +16,8 @@
     <link href="./style/header.css" rel="stylesheet">
     <link href="./style/menu.css" rel="stylesheet">
     <link href="./style/base.css" rel="stylesheet">
-    <link href="./style/index/index.css" rel="stylesheet">
-    <link href="./style/index/responsive-index.css" rel="stylesheet">
+    <link href="./style/index.css" rel="stylesheet">
+    <link href="./style/responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -95,36 +95,38 @@
                     </ul>
                 </nav>
             </div>
-            <div class="container__code-editor">
+            <div class="container__codes" id="container_codes">
+                <div class="container__code-editor">
+                    <div class="container__code-editor__project">
+                        <div class="container__code-editor__border" id="code-border">
+                            <div class="container__code-editor__text">
+                                <div class="container__code-editor__mac-buttons">
+                                    <div class="container__code-editor__mac-buttons__red"></div>
+                                    <div class="container__code-editor__mac-buttons__yellow"></div>
+                                    <div class="container__code-editor__mac-buttons--green"></div>
+                                </div>
+                                <pre>
+                                    <code id="code" class="code">
+                                        const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
-                <div class="container__code-editor__border" id="code-border">
-                    <div class="container__code-editor__text">
-                        <div class="container__code-editor__mac-buttons">
-                            <div class="container__code-editor__mac-buttons__red"></div>
-                            <div class="container__code-editor__mac-buttons__yellow"></div>
-                            <div class="container__code-editor__mac-buttons--green"></div>
+                                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                                        const unfold = (f, seed) => {
+                                        const go = (f, seed, acc) => {
+                                            const res = f(seed)
+                                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                                        }
+                                        return go(f, seed, [])
+                                        }
+                                    </code>
+                                </pre>
+                            </div>
                         </div>
-                        <pre>
-                           <code id="code" class="code">
-                            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-                            const unfold = (f, seed) => {
-                            const go = (f, seed, acc) => {
-                                const res = f(seed)
-                                return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                            }
-                            return go(f, seed, [])
-                            }
-                         </code>
-                    </pre>
+                        <div class="container__code-editor__button">
+                            <button class="btn-outlined" id="highlight">Highlight View</button>
+                        </div>
                     </div>
                 </div>
-                <div class="container__code-editor__button">
-                    <button class="btn-outlined" id="highlight">Highlight View</button>
-                </div>
-
             </div>
 
             <div class="container__form">

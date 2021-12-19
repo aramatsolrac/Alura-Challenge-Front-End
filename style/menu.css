@@ -1,5 +1,5 @@
 .container__menu {
-    display: flex;
+    display: fix;
     flex-direction: column;
     font-size: .75rem;
 }
