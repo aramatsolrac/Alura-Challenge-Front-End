@@ -5,6 +5,7 @@
         /* padding: 0 2%; */
     }
     /* header  */
+    .header,
     .header__search,
     .header__profile,
     .header__profile img,
@@ -12,17 +13,14 @@
     .container__menu {
         display: none;
     }
-    .header__mobile {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-content: flex-start;
-    }
-    .header__mobile__search {
-        margin: 1rem;
-    }
     .nav-menu.active {
         left: 40%;
+    }
+    .container__menu__item__name {
+        text-decoration: none;
+        color: var(--white);
+        font-size: .90rem;
+        padding: 1rem 0 0 .75rem;
     }
     /* code editor container */
     .container__code-editor {
@@ -58,23 +56,27 @@
 
 @media screen and (min-width: 436px) and (max-width: 1024px) {
     /* header  */
-    .header__mobile__search,
+    .header,
     .header__profile,
     .header__profile img,
     .header__profile p,
-    .container__menu {
+    .container__menu,
+    .header__mobile__search {
         display: none;
     }
-    .header__mobile {
+    /* .header__mobile {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-content: flex-start;
+    } */
+    .header__mobile__logo {
+        width: 30%;
     }
     .header__search {
         display: flex;
-        width: 55%;
-        padding-left: 1%;
+        width: 100%;
+        padding: 0 2%;
     }
     .header__search input {
         width: 100%;
@@ -85,6 +87,12 @@
     }
     .nav-menu.active {
         left: 63%;
+    }
+    .container__menu__item__name {
+        text-decoration: none;
+        color: var(--white);
+        font-size: .90rem;
+        padding: 1rem 0 0 .75rem;
     }
     /* code editor container */
     .container__codes {
@@ -125,7 +133,9 @@
 
 @media screen and (min-width: 1025px) {
     .header__mobile__menu,
-    .header__mobile__search {
+    .header__mobile__search,
+    .header__mobile__logo,
+    .header__mobile {
         display: none;
     }
     .header,
@@ -172,6 +182,13 @@
         align-items: flex-start;
         justify-content: space-between;
         width: 100%;
+    }
+    .container__menu__item__name {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 1rem;
+        padding: 1.6rem 0 0 .75rem;
+        margin-top: .2rem;
     }
     .container__code-editor {
         width: 100%;

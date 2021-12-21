@@ -40,18 +40,18 @@ function addCard(data) {
                     </div>
                     <div class="container__code-editor__project-details_metrics">
                         <div class="metrics-button">
-                            <button class="btn-comment">
+                            <button class="btn-comment mobile">
                                 <i class="fas fa-comment"></i>
                                 <span>${codeItem.comments.length}</span>
                             </button>
-                            <button class="btn-heart" id="like-${codeItem.id}" onclick="clickLikeBtn(${codeItem.id})">
+                            <button class="btn-heart mobile" id="like-${codeItem.id}" onclick="clickLikeBtn(${codeItem.id})">
                                 <i class="fas fa-heart" id="heart" ${codeItem.likes > 0 ? 'style="color: red"' : null}></i>
                                 <span id="like-number-${codeItem.id}">${codeItem.likes}</span>
                             </button>
                         </div>
 
                         <div>
-                            <button class="btn-profile">
+                            <button class="btn-profile mobile">
                             <img src="${codeItem.userImage}" alt="${codeItem.userName}">
                             <p>${codeItem.userName}</p>
                         </button>

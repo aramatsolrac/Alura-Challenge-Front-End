@@ -41,41 +41,52 @@
                     <p class="header__profile__name">Harry</p>
                 </button>
             </div>
+        </nav>
+        <!-- Mobile -->
+        <nav class="header__mobile" id="nav-mobile">
 
-            <!-- Mobile -->
+            <div class="header__mobile__logo" id="logo-mobile">
+                <h1>
+                    <a href="#"><img src="./images/logo.png" alt="" aria-hidden="true"></a>
+                </h1>
+            </div>
 
-            <div class="header__mobile">
-
-                <button id="search-mobile" class="header__mobile__search">
+            <div class="header__mobile__search" id="search-mobile">
+                <div class="header__mobile__search__input">
                     <input type="search" id="search-bar" placeholder="Search" style="display: none;">
-                    <i id="search-icon" class="fas fa-search" aria-hidden="true"></i>
-                    <i id="close-search" class="fas fa-times" style="display: none;"></i>
-            </button>
+                </div>
+                <button class="btn-search">
+                        <i id="search-icon" class="fas fa-search" aria-hidden="true"></i>
+                        <i id="close-search" class="fas fa-times" style="display: none;"></i>
+                </button>
+            </div>
+            <div class="header__search">
+                <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Search">
+            </div>
 
-                <button class="header__mobile__menu">
-                <i id="close-menu" class="fas fa-times" style="display: none;"></i>
-                <i id="bar-menu" class="fas fa-bars"></i>
+            <div class="header__mobile__menu">
+                <button class="btn-menu">
+                    <i id="close-menu" class="fas fa-times" style="display: none;"></i>
+                    <i id="bar-menu" class="fas fa-bars"></i>
+                </button>
                 <div class="nav-menu">
                     <ul>
-                        <li class="container__menu__item nav-item">
-                            <i class="container__menu__item__icon button fas fa-code" aria-hidden="true"></i>
-                            <a href="./index.html" class="container__menu__item__name name-nav-menu">Code Editor</a>
+                        <li class="container__menu__item">
+                            <i class="container__menu__item__icon fas fa-code" aria-hidden="true"></i>
+                            <a href="./index.html" class="container__menu__item__name">Code Editor</a>
                         </li>
-                        <li class="container__menu__item nav-item">
-                            <i class="container__menu__item__icon button fas fa-users" aria-hidden="true"></i>
-                            <a href="./community.html" class="container__menu__item__name name-nav-menu">Community</a>
+                        <li class="container__menu__item">
+                            <i class="container__menu__item__icon fas fa-users" aria-hidden="true"></i>
+                            <a href="./community.html" class="container__menu__item__name">Community</a>
                         </li>
                         <hr>
-                        <li class="container__menu__item nav-item mobile">
+                        <li class="container__menu__item-profile mobile">
                             <img src="./images/profile.png" alt="Harry">
-                            <p class="nav-menu-profile" >Harry</p>
+                            <p>Harry</p>
                         </li>
                     </ul>
                 </div>
-            </button>
-
             </div>
-
         </nav>
     </header>
 
@@ -87,11 +98,11 @@
                     <h2>Menu</h2>
                     <ul>
                         <li class="container__menu__item">
-                            <i class="container__menu__item__icon button fas fa-code"></i>
+                            <i class="container__menu__item__icon desactive fas fa-code"></i>
                             <a href="./index.html" class="container__menu__item__name">Code Editor</a>
                         </li>
                         <li class="container__menu__item">
-                            <i class="container__menu__item__icon button fas fa-users"></i>
+                            <i class="container__menu__item__icon active fas fa-users"></i>
                             <a href="./community.html" class="container__menu__item__name">Community</a>
                         </li>
                     </ul>

@@ -1,7 +1,11 @@
+pre,
+code {
+    margin: 0;
+}
+
 pre code.hljs {
     display: block;
     overflow-x: auto;
-    /* padding: 1em */
 }
 
 code.hljs {
@@ -58,7 +62,7 @@ code.hljs {
 
 .hljs {
     background: #002451;
-    color: #fff
+    color: #fff;
 }
 
 .hljs-emphasis {

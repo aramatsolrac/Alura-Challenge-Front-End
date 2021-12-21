@@ -39,14 +39,12 @@
 .container__code-editor__text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 1rem;
     background: var(--black);
     box-shadow: 0rem 1rem 1.5rem var(--light-black);
     border-radius: 0.5rem;
     color: var(--white);
     overflow: auto;
-    text-align: left;
     font-size: .75rem;
 }
 
@@ -95,6 +93,8 @@
     background-color: inherit;
     color: white;
     font-size: 1rem;
+    border-radius: .5rem;
+    padding: .3rem;
 }
 
 .card-actions {
@@ -124,8 +124,11 @@
 
 .metrics-button button {
     border: none;
-    /* width: 100%; */
     width: 3.5rem;
+}
+
+.btn-profile {
+    padding-top: .4rem;
 }
 
 .btn-profile p {

@@ -2,7 +2,7 @@
 const navMenu = document.querySelector(".nav-menu");
 const hamburguerBtn = document.querySelector(".header__mobile__menu");
 const barMenu = document.getElementById("bar-menu");
-const xMenu = document.getElementById("close-menu");
+const closeMenu = document.getElementById("close-menu");
 let showMenu = false;
 
 hamburguerBtn.addEventListener("click", mobileMenu);
@@ -11,11 +11,11 @@ function mobileMenu() {
     if (!showMenu) {
         navMenu.classList.toggle("active");
         barMenu.style.display = "none";
-        xMenu.style.display = "flex";
+        closeMenu.style.display = "flex";
         showMenu = true;
     } else {
         navMenu.classList.remove("active");
-        xMenu.style.display = "none";
+        closeMenu.style.display = "none";
         barMenu.style.display = "flex";
         showMenu = false;
     }
@@ -26,7 +26,9 @@ function mobileMenu() {
 const searchBtn = document.getElementById("search-mobile");
 const searchBar = document.getElementById("search-bar");
 const searchIcon = document.getElementById("search-icon");
-const xSearch = document.getElementById("close-search");
+const closeSearch = document.getElementById("close-search");
+const logo = document.getElementById("logo-mobile");
+
 let showBar = false;
 
 searchBtn.addEventListener("click", mobileSearch);
@@ -34,15 +36,17 @@ searchBtn.addEventListener("click", mobileSearch);
 function mobileSearch() {
     if (!showMenu) {
         searchBar.style.display = "flex";
-        xSearch.style.display = "flex";
+        closeSearch.style.display = "flex";
         searchIcon.style.display = "none";
+        logo.style.display = "none";
+        barMenu.style.display = "none";
         showMenu = true;
     } else {
         searchBar.style.display = "none";
-        xSearch.style.display = "none";
+        closeSearch.style.display = "none";
         searchIcon.style.display = "flex";
+        logo.style.display = "flex";
+        barMenu.style.display = "flex";
         showMenu = false;
     }
 };
-
-//menu active/desactive
