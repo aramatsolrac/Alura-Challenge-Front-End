@@ -120,7 +120,7 @@
                                     <div class="container__code-editor__mac-buttons--green"></div>
                                 </div>
                                 <pre>
-                                    <code id="code" class="code">
+                                    <code id="code" class="code" contenteditable="true" spellcheck="false">
                                         const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                                         const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)

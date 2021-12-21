@@ -130,9 +130,9 @@ input[type=text] {
 }
 
 .code {
-    border: none;
-    outline: none;
     white-space: pre-line;
+    text-align: left;
+    outline: none;
 }
 
 .code-ident {

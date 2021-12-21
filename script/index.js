@@ -15,9 +15,20 @@ const languageSelector = document.getElementById("language");
 const btn = document.getElementById("highlight");
 
 btn.addEventListener("click", highlight);
+let setHighlight = false;
 
 function highlight() {
-    code.classList.remove('language-javascript', 'language-xml', 'language-css', 'language-html');
-    code.classList.add(`language-${language.value}`);
-    hljs.highlightElement(code)
+    const originalText = code.innerText;
+    if (!setHighlight) {
+        code.classList.remove('language-javascript', 'language-xml', 'language-css', 'language-html');
+        code.classList.add(`language-${language.value}`);
+        hljs.highlightElement(code)
+        btn.innerText = "Remove Highlight";
+        setHighlight = true;
+    } else {
+        code.classList.remove(`language-${language.value}`, 'hljs');
+        code.textContent = originalText;
+        btn.innerText = "Visualize Highlight";
+        setHighlight = false;
+    }
 };
