@@ -16,9 +16,10 @@
     padding: 0;
 }
 
-.container__menu a {
+
+/* .container__menu a {
     padding: .75rem;
-}
+} */
 
 .container__menu__item {
     display: flex;
@@ -40,6 +41,11 @@
     margin: 0;
 }
 
+
+/* .container__menu__item__name {
+    padding-bottom: .75rem;
+} */
+
 .active {
     background: var(--filled-normal);
 }
@@ -57,10 +63,6 @@
     position: fixed;
     right: -100%;
     top: 6rem;
-}
-
-.nav-menu * {
-    background-color: transparent;
     font-size: 1rem;
 }
 

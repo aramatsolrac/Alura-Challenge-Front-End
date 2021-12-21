@@ -26,12 +26,12 @@
 
             <div class="header__logo" id="logo">
                 <h1>
-                    <a href="#"><img src="./images/logo.png" alt="" aria-hidden="true"></a>
+                    <a href="#"><img src="./images/logo.png" alt="Alura logo" aria-hidden="true"></a>
                 </h1>
             </div>
 
             <div class="header__search">
-                <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Search">
+                <input type="search" id="site-search" name="search" aria-label="Search" placeholder="Search">
             </div>
 
             <div class="header__profile">
@@ -47,37 +47,37 @@
 
             <div class="header__mobile__logo" id="logo-mobile">
                 <h1>
-                    <a href="#"><img src="./images/logo.png" alt="" aria-hidden="true"></a>
+                    <a href="#"><img src="./images/logo.png" alt="Alura logo" aria-hidden="true"></a>
                 </h1>
             </div>
 
             <div class="header__mobile__search" id="search-mobile">
                 <div class="header__mobile__search__input">
-                    <input type="search" id="search-bar" placeholder="Search" style="display: none;">
+                    <input type="search" id="search-bar" placeholder="Search" style="display: none;" aria-label="Search">
                 </div>
                 <button class="btn-search">
                         <i id="search-icon" class="fas fa-search" aria-hidden="true"></i>
-                        <i id="close-search" class="fas fa-times" style="display: none;"></i>
+                        <i id="close-search" class="fas fa-times" style="display: none;" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="header__search">
-                <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Search">
+                <input type="search" id="site-search" name="search" aria-label="Search" placeholder="Search">
             </div>
 
             <div class="header__mobile__menu">
                 <button class="btn-menu">
-                    <i id="close-menu" class="fas fa-times" style="display: none;"></i>
-                    <i id="bar-menu" class="fas fa-bars"></i>
+                    <i id="close-menu" class="fas fa-times" style="display: none;" aria-hidden="true"></i>
+                    <i id="bar-menu" class="fas fa-bars" aria-hidden="true"></i>
                 </button>
                 <div class="nav-menu">
                     <ul>
                         <li class="container__menu__item">
-                            <i class="container__menu__item__icon fas fa-code" aria-hidden="true"></i>
-                            <a href="./index.html" class="container__menu__item__name">Code Editor</a>
+                            <a href="./index.html" aria-label="Go to index page"><i class="container__menu__item__icon active button fas fa-code" aria-hidden="true"></i></a>
+                            <a href="./index.html" class="container__menu__item__name" aria-label="Go to index page">Code Editor</a>
                         </li>
                         <li class="container__menu__item">
-                            <i class="container__menu__item__icon fas fa-users" aria-hidden="true"></i>
-                            <a href="./community.html" class="container__menu__item__name">Community</a>
+                            <a href="./community.html" aria-label="Go to community page"><i class="container__menu__item__icon desactive button fas fa-users" aria-hidden="true"></i></a>
+                            <a href="./community.html" aria-label="Go to community page" class="container__menu__item__name">Community</a>
                         </li>
                         <hr>
                         <li class="container__menu__item-profile mobile">
@@ -99,11 +99,11 @@
                     <h2>Menu</h2>
                     <ul>
                         <li class="container__menu__item">
-                            <i class="container__menu__item__icon active fas fa-code" aria-hidden="true"></i>
+                            <a href="./index.html"><i class="container__menu__item__icon active button fas fa-code" aria-hidden="true"></i></a>
                             <a href="./index.html" class="container__menu__item__name">Code Editor</a>
                         </li>
                         <li class="container__menu__item">
-                            <i class="container__menu__item__icon desactive fas fa-users" aria-hidden="true"></i>
+                            <a href="./community.html"><i class="container__menu__item__icon desactive button fas fa-users" aria-hidden="true"></i></a>
                             <a href="./community.html" class="container__menu__item__name">Community</a>
                         </li>
                     </ul>

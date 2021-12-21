@@ -7,6 +7,10 @@ body {
     background-color: var(--darker-blue)
 }
 
+a {
+    color: white;
+}
+
 ::placeholder,
 select {
     color: var(--white);

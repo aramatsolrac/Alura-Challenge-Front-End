@@ -7,16 +7,6 @@
     padding: 0 1%;
 }
 
-
-/* .container__code-editor {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    width: 100%;
-} */
-
 .container__code-editor__border,
 .container__code-editor__button,
 .container__code-editor__text,
