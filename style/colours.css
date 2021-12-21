@@ -20,12 +20,15 @@
     --filled-focus: #96B9FD;
     /* button highlight */
     --outlined-normal: rgba(80, 129, 251, 0.08);
-    --outlined-hover-pressed: #5081FB;
-    --outlined-border-focus: #5081FB;
+    --outlined-hover-pressed: rgba(80, 129, 251, 0.16);
+    --outlined-border-focus: rgba(80, 129, 251, 0.24);
     /* input & select */
     --input-select--normal: rgba(255, 255, 255, 0.16);
     --input-select--hover: rgba(255, 255, 255, 0.24);
     --mobile--hover: rgba(255, 255, 255, 0.24);
+    /* menu */
+    --menu-hover: rgba(80, 129, 251, 0.08);
+    --menu-pressed: rgba(80, 129, 251, 0.16);
     /* code editor  */
     --green: #9AFF6B;
     --purple: #6B83FF;

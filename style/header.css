@@ -63,6 +63,7 @@
     border: none;
     color: var(--white);
     padding: .5rem;
+    border-radius: .3rem;
 }
 
 .header__profile * {

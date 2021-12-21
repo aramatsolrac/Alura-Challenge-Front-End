@@ -16,11 +16,6 @@
     padding: 0;
 }
 
-
-/* .container__menu a {
-    padding: .75rem;
-} */
-
 .container__menu__item {
     display: flex;
     padding: .40rem .450rem 0 0;
@@ -40,11 +35,6 @@
 .container__menu__item__icon i {
     margin: 0;
 }
-
-
-/* .container__menu__item__name {
-    padding-bottom: .75rem;
-} */
 
 .active {
     background: var(--filled-normal);
