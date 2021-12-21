@@ -22,8 +22,6 @@ function mobileMenu() {
 };
 
 //search bar
-
-const searchBtn = document.getElementById("search-mobile");
 const searchBar = document.getElementById("search-bar");
 const searchIcon = document.getElementById("search-icon");
 const closeSearch = document.getElementById("close-search");
@@ -31,7 +29,8 @@ const logo = document.getElementById("logo-mobile");
 
 let showBar = false;
 
-searchBtn.addEventListener("click", mobileSearch);
+searchIcon.addEventListener("click", mobileSearch);
+closeSearch.addEventListener("click", mobileSearch);
 
 function mobileSearch() {
     if (!showMenu) {
