@@ -11,11 +11,13 @@ function mobileMenu() {
     if (!showMenu) {
         navMenu.classList.toggle("active");
         barMenu.style.display = "none";
+        searchIcon.style.display = "none";
         closeMenu.style.display = "flex";
         showMenu = true;
     } else {
         navMenu.classList.remove("active");
         closeMenu.style.display = "none";
+        searchIcon.style.display = "flex";
         barMenu.style.display = "flex";
         showMenu = false;
     }

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/19dc0097e6.js" crossorigin="anonymous"></script>
     <link href="./style/colours.css" rel="stylesheet">
-    <link href="./style/header.css" rel="stylesheet">
-    <link href="./style/menu.css" rel="stylesheet">
+    <link href="./style/header-menu__mobile.css" rel="stylesheet">
+    <link href="./style/header-menu.css" rel="stylesheet">
     <link href="./style/base.css" rel="stylesheet">
     <link href="./style/index.css" rel="stylesheet">
     <link href="./style/responsive.css" rel="stylesheet">
@@ -52,12 +52,12 @@
             </div>
 
             <div class="header__mobile__search" id="search-mobile">
-                <div class="header__mobile__search__input">
+                <div class="header__mobile__search__input icon-inside">
                     <input type="search" id="search-bar" class="input-select" placeholder="Search" style="display: none;" aria-label="Search">
+                    <i id="close-search" class="fas fa-times icon-menu" style="display: none;" aria-hidden="true"></i>
                 </div>
-                <button class="btn-search icon-menu">
-                        <i id="search-icon" class="fas fa-search" aria-hidden="true"></i>
-                        <i id="close-search" class="fas fa-times" style="display: none;" aria-hidden="true"></i>
+                <button id="search-icon" class="btn-search icon-menu">
+                        <i class="fas fa-search" aria-hidden="true"></i>
                 </button>
             </div>
             <div class="header__search">
@@ -65,10 +65,10 @@
             </div>
 
             <div class="header__mobile__menu">
-                <button class="btn-menu icon-menu">
-                    <i id="close-menu" class="fas fa-times" style="display: none;" aria-hidden="true"></i>
-                    <i id="bar-menu" class="fas fa-bars" aria-hidden="true"></i>
+                <button class="btn-menu icon-menu" id="bar-menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
                 </button>
+                <i id="close-menu" class="fas fa-times icon-menu" style="display: none;" aria-hidden="true"></i>
                 <div class="nav-menu">
                     <ul>
                         <li class="container__menu__item">
