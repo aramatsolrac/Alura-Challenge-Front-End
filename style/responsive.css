@@ -2,7 +2,6 @@
     .container {
         flex-direction: column;
         align-items: center;
-        /* padding: 0 2%; */
     }
     /* header  */
     .header,
@@ -64,12 +63,6 @@
     .header__mobile__search {
         display: none;
     }
-    /* .header__mobile {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-content: flex-start;
-    } */
     .header__mobile__logo {
         width: 30%;
     }

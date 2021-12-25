@@ -1,8 +1,15 @@
-//hamburguer menu
 const navMenu = document.querySelector(".nav-menu");
 const hamburguerBtn = document.querySelector(".header__mobile__menu");
 const barMenu = document.getElementById("bar-menu");
 const closeMenu = document.getElementById("close-menu");
+
+const searchBar = document.getElementById("search-bar");
+const searchIcon = document.getElementById("search-icon");
+const closeSearch = document.getElementById("close-search");
+const logo = document.getElementById("logo-mobile");
+
+//hamburguer menu
+
 let showMenu = false;
 
 hamburguerBtn.addEventListener("click", mobileMenu);
@@ -24,10 +31,7 @@ function mobileMenu() {
 };
 
 //search bar
-const searchBar = document.getElementById("search-bar");
-const searchIcon = document.getElementById("search-icon");
-const closeSearch = document.getElementById("close-search");
-const logo = document.getElementById("logo-mobile");
+
 
 let showBar = false;
 
