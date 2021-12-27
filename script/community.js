@@ -16,11 +16,12 @@ fetch('https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json'
 function addCard(data) {
     const projectContainer = document.getElementById("container_codes")
 
-    data.forEach((codeItem) => {
+    Object.keys(data).forEach((id) => {
+        const codeItem = data[id];
         projectContainer.innerHTML = `
         <div class="container__code-editor">
             <div class="container__code-editor__project">
-                <div class="container__code-editor__border" style="background-color: var(--${codeItem.borderColor})">
+                <div class="container__code-editor__border" style="background-color: ${codeItem.borderColor}">
                     <div class="container__code-editor__text">
                         <div class="container__code-editor__mac-buttons">
                             <div class="container__code-editor__mac-buttons__red"></div>
@@ -42,11 +43,11 @@ function addCard(data) {
                         <div class="metrics-button">
                             <button class="btn-comment mobile">
                                 <i class="fas fa-comment"></i>
-                                <span>${codeItem.comments.length}</span>
+                                <span>${codeItem.comments ? codeItem.comments.length : 0}</span>
                             </button>
-                            <button class="btn-heart mobile" id="like-${codeItem.id}" onclick="clickLikeBtn(${codeItem.id})">
+                            <button class="btn-heart mobile" id="like-${id}" onclick="clickLikeBtn(${id})">
                                 <i class="fas fa-heart" id="heart" ${codeItem.likes > 0 ? 'style="color: red"' : null}></i>
-                                <span id="like-number-${codeItem.id}">${codeItem.likes}</span>
+                                <span id="like-number-${id}">${codeItem.likes}</span>
                             </button>
                         </div>
 

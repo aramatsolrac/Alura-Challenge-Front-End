@@ -1,19 +1,22 @@
-//picker color
-const colorPicker = document.getElementById("color");
 const border = document.getElementById("code-border");
+const code = document.getElementById("code");
+const btn = document.getElementById("highlight");
 
+
+const projectName = document.getElementById("project-name");
+const projectDescription = document.getElementById("description");
+const languageSelector = document.getElementById("language");
+const colorPicker = document.getElementById("color");
+const saveBtn = document.getElementById("save-project");
+
+//color picker
 colorPicker.addEventListener("change", changeColor);
-
 
 function changeColor() {
     border.style.backgroundColor = colorPicker.value;
 }
 
 //highlight
-const code = document.getElementById("code");
-const languageSelector = document.getElementById("language");
-const btn = document.getElementById("highlight");
-
 btn.addEventListener("click", highlight);
 let setHighlight = false;
 
@@ -30,5 +33,57 @@ function highlight() {
         code.textContent = originalText;
         btn.innerText = "Visualize Highlight";
         setHighlight = false;
+    }
+};
+
+//save project
+saveBtn.addEventListener("click", saveProject);
+
+function saveProject() {
+    // console.log(code.innerText);
+    // console.log(projectDescription.value);
+    // console.log(projectName.value);
+    // console.log(languageSelector.value);
+    // console.log(colorPicker.value);
+
+    if (code.innerText == '' || projectDescription.value === '' || projectName.value === '' || languageSelector.value === '' || colorPicker.value === '') {
+        alert("...")
+    } else {
+
+
+        const newCode = {
+            "borderColor": colorPicker.value,
+            "code": code.innerText,
+            "language": languageSelector.value,
+            "likes": 0,
+            "projectDescription": projectDescription.value,
+            "projectName": projectName.value,
+            "userImage": "./images/profile.png",
+            "userName": "@Rob"
+        }
+
+        fetch('https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(newCode),
+            })
+            .then(response => response.json())
+            .then(codes => {
+                console.log('Success:', codes);
+
+                code.innerText = '';
+                projectDescription.value = '';
+                projectName.value = '';
+                languageSelector.value = '';
+                border.style.backgroundColor = '#6bd1ff';
+                colorPicker.value = '#6bd1ff';
+                // console.log({ codes })
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+
     }
 };
