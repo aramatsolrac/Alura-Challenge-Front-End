@@ -29,7 +29,7 @@ function addCard(data) {
                             <div class="container__code-editor__mac-buttons--green"></div>
                         </div>
                         <pre class="code-ident">
-                            <code id="code">${codeItem.code}</code>
+                            <code id="code" class="code language-${codeItem.language} hljs">${codeItem.code}</code>
                         </pre>
                     </div>
                 </div>
@@ -63,6 +63,10 @@ function addCard(data) {
             </div>
         </div>
         ` + projectContainer.innerHTML
+
+        if (codeItem.highlight) {
+            hljs.highlightElement(projectContainer.querySelector("code"));
+        }
     })
 
 }

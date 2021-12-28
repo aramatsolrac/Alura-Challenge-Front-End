@@ -1,6 +1,7 @@
 const border = document.getElementById("code-border");
 const code = document.getElementById("code");
 const btn = document.getElementById("highlight");
+// const highlightLanguage = document.getElementsByClassName(`language-${language.value}`, 'hljs');
 
 
 const projectName = document.getElementById("project-name");
@@ -40,20 +41,14 @@ function highlight() {
 saveBtn.addEventListener("click", saveProject);
 
 function saveProject() {
-    // console.log(code.innerText);
-    // console.log(projectDescription.value);
-    // console.log(projectName.value);
-    // console.log(languageSelector.value);
-    // console.log(colorPicker.value);
 
     if (code.innerText == '' || projectDescription.value === '' || projectName.value === '' || languageSelector.value === '' || colorPicker.value === '') {
         alert("...")
     } else {
-
-
         const newCode = {
             "borderColor": colorPicker.value,
             "code": code.innerText,
+            "highlight": setHighlight,
             "language": languageSelector.value,
             "likes": 0,
             "projectDescription": projectDescription.value,
@@ -79,7 +74,6 @@ function saveProject() {
                 languageSelector.value = '';
                 border.style.backgroundColor = '#6bd1ff';
                 colorPicker.value = '#6bd1ff';
-                // console.log({ codes })
             })
             .catch((error) => {
                 console.error('Error:', error);
