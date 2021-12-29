@@ -70,3 +70,20 @@ function addCard(data) {
     })
 
 }
+
+//search
+// const field = document.getElementById("search-bar");
+
+// field.addEventListener("keyup", search);
+
+// function search() {
+//     const ul = document.getElementById("codesFound");
+//     const searchString = field.value;
+//     const codesFound = search(searchString);
+//     ul.innerHTML = "";
+//     codesFound.forEach(c => {
+//         let li = document.createElement("li");
+//         li.innerText = `${c.codes}`;
+//         ul.appendChild(li)
+//     });
+// }
