@@ -1,3 +1,5 @@
+//like button
+
 function clickLikeBtn(id) {
     console.log('clickLikeBtn', id);
     const btnLike = document.getElementById(`like-${id}`);
@@ -11,10 +13,11 @@ function clickLikeBtn(id) {
 
 fetch('https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json')
     .then(response => response.json())
-    .then(data => addCard(data));
+    .then(data => populateData(data));
 
-function addCard(data) {
+function populateData(data) {
     const projectContainer = document.getElementById("container_codes")
+    projectContainer.innerHTML = null
 
     Object.keys(data).forEach((id) => {
         const codeItem = data[id];
@@ -72,18 +75,11 @@ function addCard(data) {
 }
 
 //search
-// const field = document.getElementById("search-bar");
+const field = document.getElementById("search-bar");
+field.addEventListener("keyup", search);
 
-// field.addEventListener("keyup", search);
-
-// function search() {
-//     const ul = document.getElementById("codesFound");
-//     const searchString = field.value;
-//     const codesFound = search(searchString);
-//     ul.innerHTML = "";
-//     codesFound.forEach(c => {
-//         let li = document.createElement("li");
-//         li.innerText = `${c.codes}`;
-//         ul.appendChild(li)
-//     });
-// }
+function search() {
+    fetch(`https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json?orderBy="language"&equalTo="${field.value}"&print=pretty`)
+        .then(response => response.json())
+        .then(data => populateData(data));
+}
