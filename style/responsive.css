@@ -186,8 +186,8 @@
         width: 100%;
     }
     .container__code-editor__text {
-        max-height: 27rem;
-        min-height: 15rem;
+        max-height: 21rem;
+        min-height: 21rem;
     }
     .container__form {
         display: flex;
