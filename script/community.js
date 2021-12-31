@@ -2,14 +2,24 @@
 
 function clickLikeBtn(id) {
     console.log('clickLikeBtn', id);
+    let like = false
+
     const btnLike = document.getElementById(`like-${id}`);
     const likeNumber = document.getElementById(`like-number-${id}`);
     const iconLike = btnLike.querySelector('i');
-    likeNumber.innerHTML = parseInt(likeNumber.innerHTML) + 1;
-    if (likeNumber.innerHTML != "0") {
+
+    if (!like) {
+        likeNumber.innerHTML = parseInt(likeNumber.innerHTML) + 1;
         iconLike.style.color = "red";
+        like = true;
+    } else {
+        likeNumber.innerHTML = parseInt(likeNumber.innerHTML) - 1;
+        iconLike.style.color = "white";
+        like = false;
     }
+
 }
+
 
 fetch('https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json')
     .then(response => response.json())
@@ -48,8 +58,8 @@ function populateData(data) {
                                 <i class="fas fa-comment"></i>
                                 <span>${codeItem.comments ? codeItem.comments.length : 0}</span>
                             </button>
-                            <button class="btn-heart mobile" id="like-${id}" onclick="clickLikeBtn(${id})">
-                                <i class="fas fa-heart" id="heart" ${codeItem.likes > 0 ? 'style="color: red"' : null}></i>
+                            <button class="btn-heart mobile" id="like-${id}" onclick="clickLikeBtn('${id}')">
+                                <i class="fas fa-heart" id="heart"></i>
                                 <span id="like-number-${id}">${codeItem.likes}</span>
                             </button>
                         </div>
