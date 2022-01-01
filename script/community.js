@@ -1,26 +1,25 @@
 //like button
-
 function clickLikeBtn(id) {
     console.log('clickLikeBtn', id);
-    let like = false
+    let like
 
     const btnLike = document.getElementById(`like-${id}`);
     const likeNumber = document.getElementById(`like-number-${id}`);
     const iconLike = btnLike.querySelector('i');
 
-    if (!like) {
-        likeNumber.innerHTML = parseInt(likeNumber.innerHTML) + 1;
-        iconLike.style.color = "red";
-        like = true;
-    } else {
+    if (like) {
         likeNumber.innerHTML = parseInt(likeNumber.innerHTML) - 1;
         iconLike.style.color = "white";
         like = false;
+    } else {
+        likeNumber.innerHTML = parseInt(likeNumber.innerHTML) + 1;
+        iconLike.style.color = "red";
+        like = true;
     }
 
 }
 
-
+//codes
 fetch('https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json')
     .then(response => response.json())
     .then(data => populateData(data));

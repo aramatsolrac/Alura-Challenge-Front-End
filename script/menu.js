@@ -9,7 +9,6 @@ const closeSearch = document.getElementById("close-search");
 const logo = document.getElementById("logo-mobile");
 
 //hamburguer menu
-
 let showMenu = false;
 
 hamburguerBtn.addEventListener("click", mobileMenu);
@@ -31,8 +30,6 @@ function mobileMenu() {
 };
 
 //search bar
-
-
 let showBar = false;
 
 searchIcon.addEventListener("click", mobileSearch);
