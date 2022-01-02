@@ -16,14 +16,9 @@ function clickLikeBtn(id) {
         iconLike.style.color = "red";
         like = true;
     }
-
 }
 
-//codes
-fetch('https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json')
-    .then(response => response.json())
-    .then(data => populateData(data));
-
+//codes container
 function populateData(data) {
     const projectContainer = document.getElementById("container_codes")
     projectContainer.innerHTML = null
@@ -88,7 +83,16 @@ const field = document.getElementById("search-bar");
 field.addEventListener("keyup", search);
 
 function search() {
-    fetch(`https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json?orderBy="language"&equalTo="${field.value}"&print=pretty`)
-        .then(response => response.json())
-        .then(data => populateData(data));
+    if (field.value === "") {
+        fetch('https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json')
+            .then(response => response.json())
+            .then(data => populateData(data));
+
+    } else {
+        fetch(`https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json?orderBy="language"&equalTo="${field.value}"&print=pretty`)
+            .then(response => response.json())
+            .then(data => populateData(data));
+    }
 }
+
+search()
