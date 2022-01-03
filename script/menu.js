@@ -3,7 +3,7 @@ const hamburguerBtn = document.querySelector(".header__mobile__menu");
 const barMenu = document.getElementById("bar-menu");
 const closeMenu = document.getElementById("close-menu");
 
-const searchBar = document.getElementById("search-bar");
+const searchBar = document.getElementById("mobile-search-bar");
 const searchIcon = document.getElementById("search-icon");
 const closeSearch = document.getElementById("close-search");
 const logo = document.getElementById("logo-mobile");
@@ -36,19 +36,19 @@ searchIcon.addEventListener("click", mobileSearch);
 closeSearch.addEventListener("click", mobileSearch);
 
 function mobileSearch() {
-    if (!showMenu) {
+    if (!showBar) {
         searchBar.style.display = "flex";
         closeSearch.style.display = "flex";
         searchIcon.style.display = "none";
         logo.style.display = "none";
         barMenu.style.display = "none";
-        showMenu = true;
+        showBar = true;
     } else {
         searchBar.style.display = "none";
         closeSearch.style.display = "none";
         searchIcon.style.display = "flex";
         logo.style.display = "flex";
         barMenu.style.display = "flex";
-        showMenu = false;
+        showBar = false;
     }
 };

@@ -79,20 +79,26 @@ function populateData(data) {
 }
 
 //search
-const field = document.getElementById("search-bar");
-field.addEventListener("keyup", search);
+const fieldMobile = document.getElementById("mobile-search-bar");
+fieldMobile.addEventListener("keyup", () => search(fieldMobile.value));
 
-function search() {
-    if (field.value === "") {
+const fieldIpad = document.getElementById("ipad-search-bar");
+fieldIpad.addEventListener("keyup", () => search(fieldIpad.value));
+
+const fieldDesktop = document.getElementById("desktop-search-bar");
+fieldDesktop.addEventListener("keyup", () => search(fieldDesktop.value));
+
+function search(value) {
+    if (value === "") {
         fetch('https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json')
             .then(response => response.json())
             .then(data => populateData(data));
 
     } else {
-        fetch(`https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json?orderBy="language"&equalTo="${field.value}"&print=pretty`)
+        fetch(`https://alura-challenge-front-end-default-rtdb.firebaseio.com/codes.json?orderBy="language"&equalTo="${value}"&print=pretty`)
             .then(response => response.json())
             .then(data => populateData(data));
     }
 }
 
-search()
+search("")
