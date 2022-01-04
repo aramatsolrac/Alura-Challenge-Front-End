@@ -8,10 +8,10 @@ A Front-End challenge created by [Alura](https://www.alura.com.br/challenges/fro
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Live](#live)
-<!-- - [Screenshot](#screenshot) -->
-<!-- - [My process](#my-process) -->
-  <!-- - [Built with](#built-with) -->
-  <!-- - [What I learned](#what-i-learned)  -->
+- [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 
@@ -28,24 +28,51 @@ The main features requested are:
 - This project must be scalable, to the point that if it is needed to add some functionality (feature), it will be simple to do so;
 - As this editor is online, it should be responsive.
 
+Users will be able to:
+
+- Edit the code and set the highlight;
+- Save project in the community tab;
+- Check project on the community tab;
+- Projects remain in the community tab;
+- Like saved projects;
+- Search by language name on community tab.
+
+
 ### Live
 - [Live](https://aramatsolrac.github.io/alura-challenge-front-end/index.html)
 
 
-<!-- ### Screenshot
+### Screenshot
 
-#### Desktop
-![](./images/)
+<details>
+<summary>Index Screenshots</summary>
 
-#### Tablet
-![](./images/)
+##### Desktop
+![](./images/index-desktop.png)
 
-#### Mobile
-![](./images/) -->
+##### Tablet
+![](./images/index-tablet.png)
+
+##### Mobile
+![](./images/index-mobile.png)
+</details>
+<details>
+<summary>Community Screenshots</summary>
+
+##### Desktop
+![](./images/community-desktop.png)
+
+##### Tablet
+![](./images/community-tablet.png)
+
+##### Mobile
+![](./images/community-mobile.png)
+
+</details>
 
 
 
-<!-- ## My process
+## My process
 
 
 ### Built with
@@ -53,25 +80,44 @@ The main features requested are:
 - CSS custom properties
 - Flexbox
 - JavaScript
+- Firebase
 
 
 ### What I learned
+- Use libraries like: Highlight JS;
+- Use firebase;
+- Group development, helping and being helped in discord;
+- Use trello to organize my tasks;
 
 
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
 
-
-
+ <div class="header__mobile__search" id="search-mobile">
+    <div class="header__mobile__search__input icon-inside">
+      <input type="search" id="mobile-search-bar" class="input-select" style="display: none;" aria-label="Search" placeholder="Search">
+        <i id="close-search" class="fas fa-times icon-menu" style="display: none;" aria-hidden="true"></i>
+    </div>
+    <button id="search-icon" class="btn-search icon-menu">
+      <i class="fas fa-search" aria-hidden="true"></i>
+    </button>
+</div>
 ```
 
 ```css
 .proud-of-this-css {}
 
-
-
-``` -->
+@media screen and (min-width: 1025px) {
+    .container__codes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+        grid-auto-rows: minmax(6.25rem, auto);
+        gap: 1em;
+        width: 100%;
+    }
+}
+```
 
 ## Author
 
