@@ -43,7 +43,7 @@ saveBtn.addEventListener("click", saveProject);
 function saveProject() {
 
     if (code.innerText == '' || projectDescription.value === '' || projectName.value === '' || languageSelector.value === '' || colorPicker.value === '') {
-        alert("...")
+        alert("Please fill out the form below.")
     } else {
         const newCode = {
             "borderColor": colorPicker.value,

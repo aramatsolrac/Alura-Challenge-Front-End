@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px 2em;
+        gap: 0.625rem 2rem;
         width: 100%;
         padding: 0 3%;
     }
@@ -92,7 +92,7 @@
         display: flex;
         flex-direction: column;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px 2em;
+        gap: 0.625rem 2rem;
         width: 100%;
         padding: 0 1rem;
     }
@@ -197,8 +197,8 @@
     }
     .container__codes {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-        grid-auto-rows: minmax(100px, auto);
+        grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+        grid-auto-rows: minmax(6.25rem, auto);
         gap: 1em;
         width: 100%;
     }
