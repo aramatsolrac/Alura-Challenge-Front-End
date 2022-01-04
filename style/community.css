@@ -24,8 +24,15 @@
 .container__code-editor__project-details {
     margin: 1rem;
     font-size: 1rem;
-    font-weight: 700;
     font-family: var(--inter);
+}
+
+.container__code-editor__project-details h1 {
+    font-weight: 700;
+}
+
+.container__code-editor__project-details p {
+    font-weight: 400;
 }
 
 .metrics-button,
